@@ -1,7 +1,49 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('woff2'), 
+    url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('woff'), 
+    url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('truetype');
+
+  /* font-family: 'Press Start 2P';
+  src: local('Press Start 2P'), url(./fonts/PressStart2P-Regular.ttf) format('woff2'), 
+    url(./fonts/PressStart2P-Regular.ttf) format('woff'), 
+    url(./fonts/PressStart2P-Regular.ttf) format('truetype'); */
+    
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+/* html {
+  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
+} */
+
+/*
+ *  STYLE 4
+ */
+
+ ::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: #F5F5F5;
+ }
+ 
+ ::-webkit-scrollbar
+ {
+     width: 10px;
+     background-color: #cbad09;
+ }
+ 
+ ::-webkit-scrollbar-thumb
+ {
+     background-color: #202020;
+     border: 2px solid #F5F5F5;;
+ }
+ 
+
 .pixel-borders {
   position: relative;
   display: inline-block;
-  margin: 0 15px 15px 0;
+  /* margin: 0 15px 15px 0; */
   padding: 15px 20px;
   background-color: #fff;
   font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
