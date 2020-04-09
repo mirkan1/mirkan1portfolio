@@ -3,7 +3,7 @@ import githubLogo from '../icons/GitHub-Mark-32px.png';
 import facebookLogo from '../icons/facebook.png';
 import linkedinLogo from '../icons/linkedin.png';
 import twitterLogo from '../icons/twitter.png';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -124,10 +124,10 @@ export default function Footer() {
         <div className="copyright-div">
           <hr/>
           <div className="footer-b">
-            <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32"></img>&nbsp;&nbsp;github</a>
-            <a href="https://www.facebook.com/R.mirkan" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} height="32" width="32"></img>&nbsp;&nbsp;facebook</a>
-            <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32"></img>&nbsp;&nbsp;twitter</a>
-            <a href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32"></img>&nbsp;&nbsp;linkedin</a>
+            <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
+            <a href="https://www.facebook.com/R.mirkan" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;facebook</a>
+            <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
+            <a href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
           </div>
             <p>© 2020 Renas M. Kilic</p>
         </div>

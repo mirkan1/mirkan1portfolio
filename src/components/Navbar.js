@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import rIcon from '../img/react-ico.png';
 import { NavLink } from 'react-router-dom';
@@ -131,16 +131,12 @@ function Navbar() {
   function infoButton() {
     let ele = document.getElementsByClassName('navbar')[0];
     let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];
-
-    // .navbar-collapse {
-    //   display: flex;
-    //   align-items: flex-end;
-    // }
+    
     if (!size) {
       ele.style["max-height"] = "300px";
-        setTimeout(function(){ 
-          navbarCollapse.style["margin"] = "0 0 0 75%"; 
-        }, 100);
+      setTimeout(function(){ 
+        navbarCollapse.style["margin"] = "0 0 0 75%"; 
+      }, 100);
       // navbarCollapse.style["align-items"] = "flex-end";
     } else {
       ele.style["max-height"] = "100px"; 

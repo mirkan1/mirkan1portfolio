@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Jumbotron as Jumbo, Row, Container, Col } from 'react-bootstrap';
-import { CSSTransition } from 'react-transition-group';
-import { Navbar, routes } from './components/Navbar';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import { Jumbotron as Jumbo, Row, Container, Col } from 'react-bootstrap';
+// import { CSSTransition } from 'react-transition-group';
+// import { Navbar, routes } from './components/Navbar';
 import backgroundImage from './img/bg3jpg.jpg';
 import Footer from './components/Footer';
-import InfoPanel from './components/InfoPanel';
-import Privacy from './pages/Privacy';
-import { NoMatch } from './pages/NoMatch';
+// import InfoPanel from './components/InfoPanel';
+// import Privacy from './pages/Privacy';
+// import { NoMatch } from './pages/NoMatch';
 import styled from 'styled-components';
 import './css/App.css';
 
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Styles>
-      <Router>
+      {/* <Router>
         <Navbar/>
         <Jumbo className="jumbo">
           <Container style={{marginTop: "110px", minHeight: "60vh"}}>
@@ -47,7 +47,7 @@ class App extends Component {
             </Row>
           </Container>
         </Jumbo>
-      </Router>
+      </Router> */}
       <Footer />
     </Styles>
   )

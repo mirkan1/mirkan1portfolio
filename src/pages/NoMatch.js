@@ -6,12 +6,12 @@ import { routes } from '../components/Navbar';
 export const NoMatch = ({ match }) => {
     let param = match.params.any;
 
-    if (param == "privacy") {
+    if (param === "privacy") {
         return (<></>)
     }
     
     for (let i in routes) {
-        if (routes[i].name.toLowerCase() == param) {
+        if (routes[i].name.toLowerCase() === param) {
             return (<></>)
         }
     }
@@ -25,7 +25,7 @@ export const NoMatch = ({ match }) => {
                 </div>
                 <h2>Page not found</h2>
                 <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
-                <a href="#">home page</a>
+                <a href="/">home page</a>
             </div>
         </div>
     )
