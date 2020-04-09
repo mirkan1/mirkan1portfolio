@@ -10,6 +10,7 @@ import Privacy from './pages/Privacy';
 import { NoMatch } from './pages/NoMatch';
 import styled from 'styled-components';
 import './css/App.css';
+import './css/hover-min.css';
 
 class App extends Component {  
   render() {
