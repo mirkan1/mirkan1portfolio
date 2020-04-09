@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 // import Privacy from './pages/Privacy';
 // import { NoMatch } from './pages/NoMatch';
 import styled from 'styled-components';
-import './css/App.css';
+// import './css/App.css';
 
 class App extends Component {  
   render() {
