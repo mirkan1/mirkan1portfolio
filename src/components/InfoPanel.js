@@ -6,7 +6,7 @@ const Styles = styled.div`
   #access-info {
     font-family: "Ubuntu", "Roboto";
     background-color: rgba(32, 32, 32, .7);
-    height: 40vh;
+    height: 400px;
     width: 100%;
     border-color: black;
     border-size: 10px;
@@ -24,13 +24,13 @@ const Styles = styled.div`
     overflow: hidden;
     transition max-height 0.3s ease-out; // note that we're transitioning max-height, not height!
     height: auto;
-    max-height: 11.8vh;
+    max-height: 105px;
   }
 
   .ver-hr {
     border:         none;
     border-left:    1px solid hsla(200, 10%, 50%,100);
-    height:         20vh;
+    height:         200px;
     width:          1px;
   }
 
@@ -71,9 +71,9 @@ export default function InfoPanel() {
         let ele = document.getElementById('access-info');
         //console.log(ele.classList.add(""))
         if (!item) {
-          ele.style["max-height"] = "40vh"; 
+          ele.style["max-height"] = "400px"; 
         } else {
-          ele.style["max-height"] = "11.8vh"; 
+          ele.style["max-height"] = "105px"; 
         }
         itemChange(!item)
     }

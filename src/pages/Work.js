@@ -62,6 +62,10 @@ const Styles = styled.div`
   }
 `;
 
+const pixelArt = function() {
+  return <a href='https://www.w3schools.com'>pixel art drawings </a>
+}
+
 const projects = [
   // Ustten ekle
   {title: "Renas Kilic's website", subInfo: "My portfolio website aka this website", link: "https://github.com/mirkan1/mirkan1portfolio", language: "Javascript (react)", info: 
@@ -69,7 +73,7 @@ const projects = [
   {title: "xhrchat", subInfo: "chat program used XHR requests", link: "https://github.com/mirkan1/xhrchat", language: "Javascript (express, node, mongodb)", info: 
     ["I was thinking about chats in the browser, how can it work effectively withou websockets? One time I got a great idea. If I use simple ajax and set timeout to big number (for example 20 seconds), I can respond on the server side in the moment when I have new message for client. Great idea, so I started work and after +-2 hours I had first working prototype. So I invest few more hours to programming this thing and created this!"] },
   {title: "SomeTrexGame", subInfo: "Mobile arcade game", link: "https://github.com/mirkan1/someTrexGame", language: "Javascript (react-native)", info: 
-    ["I always have interest in mobile phones and its technologies, I had lots of fun wrighting it, it is a mobile game that you shot target with your ball, if your ball hits the corner it turns back","I like Arcade games, that is the main reason why my first ever game is a arcade game",] },
+    ["I always have interest in mobile phones and its technologies, I had lots of fun creating it. A mobile game that you shot random appearong targets throwing a ball, if the ball that you throw hit the corner it turns back", "I like Arcade games, that is the main reason why my first ever game is a arcade game", <p>I am planning for future to mix my <a className="hvr-underline-from-left" href='https://giphy.com/channel/mirkankl'>pixel art drawings</a> and an arcade game together, probably this one</p>] },
   {title: "Elif's ox", subInfo: "Ethimologic Search Engine, Forum", link: "https://github.com/lyk2018-python/elifin-okuzu", language: "Python (django)", info: 
     ["Elif is a common name in Turkey and is also first letter of Arabic alphabet and comes from Greece's first letter Alpha","We created as a group more than ten people in my summer camp at Bolu, Turkey"] },
   {title: "BTC bot", subInfo: "Telegram bot that annonce bitcoin movements", language: "Python (requests)", link: "https://github.com/mirkan1/Telegram_spam", info: 
