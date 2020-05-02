@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {  Row, Container, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import MailForm from './MailForm';
 
 const Styles = styled.div`
   #access-info {
@@ -30,7 +31,7 @@ const Styles = styled.div`
   .ver-hr {
     border:         none;
     border-left:    1px solid hsla(200, 10%, 50%,100);
-    height:         200px;
+    height:         150px;
     width:          1px;
   }
 
@@ -100,6 +101,7 @@ export default function InfoPanel() {
                 <p>N/A</p>
               </Col>
             </Row>
+            <MailForm />
             {/* if small mode, the button is closed*/}
             </Container>
           </div>

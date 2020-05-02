@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
 import Blog from '../pages/Blog';
 import Work from '../pages/Work';
+import Resume from '../pages/Resume';
 import About from '../pages/About';
 
 const routes = [
@@ -12,9 +13,62 @@ const routes = [
     { path: '/', name: 'Home', Component: About },
     { path: '/work', name: 'Work', Component: Work },
     { path: '/blog', name: 'Blog', Component: Blog },
+    { path: '/resume', name: 'Resume', Component: Resume },
     //{ path: '*', name: "NoMatch", Component: NoMatch}
 ]
 
+
+function Navbar() {
+  
+  const [size, sizeChange] = useState(false);
+  
+  function infoButton() {
+    let ele = document.getElementsByClassName('navbar')[0];
+    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];
+    
+    if (!size) {
+      ele.style["max-height"] = "300px";
+      setTimeout(function(){ 
+        navbarCollapse.style["margin"] = "0 0 0 70%"; 
+      }, 100);
+      // navbarCollapse.style["align-items"] = "flex-end";
+    } else {
+      ele.style["max-height"] = "100px"; 
+      navbarCollapse.style["margin"] = "0"
+      // navbarCollapse.style["display"] = "none";
+    }
+    sizeChange(!size)
+  }
+  
+  return (
+    <Styles>
+        <NavigationBar expand="md" className="navbar">
+          <NavigationBar.Brand href="/">
+            <img className="rnIcon" src={rIcon}></img>
+          </NavigationBar.Brand>
+
+          <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>
+          <NavigationBar.Collapse id="basic-navbar-nav" className="justify-content-end">
+            {routes.map(route => (
+              <Nav.Item>
+              <Nav.Link
+                key={route.path}
+                as={NavLink}
+                to={route.path}
+                activeClassName="active"
+                exact
+                onClick={() => document.getElementById("root").style.width = "100%"}
+              >
+                {route.name}
+              </Nav.Link>
+              </Nav.Item>
+            ))}
+          </NavigationBar.Collapse>
+        </NavigationBar>
+      </Styles>
+    )
+  }
+  
 const Styles = styled.div`
     .navbar {
         font-family: "Ubuntu","Roboto";
@@ -67,7 +121,7 @@ const Styles = styled.div`
     }
 
     .nav-item a {
-      width: 25%;
+      width: 20%;
       height: 25%;
       align-items: right;
       color: #E6E6E6;
@@ -123,56 +177,4 @@ const Styles = styled.div`
     }
 
 `;
-
-function Navbar() {
-  
-  const [size, sizeChange] = useState(false);
-
-  function infoButton() {
-    let ele = document.getElementsByClassName('navbar')[0];
-    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];
-    
-    if (!size) {
-      ele.style["max-height"] = "300px";
-      setTimeout(function(){ 
-        navbarCollapse.style["margin"] = "0 0 0 75%"; 
-      }, 100);
-      // navbarCollapse.style["align-items"] = "flex-end";
-    } else {
-      ele.style["max-height"] = "100px"; 
-      navbarCollapse.style["margin"] = "0"
-      // navbarCollapse.style["display"] = "none";
-    }
-    sizeChange(!size)
-  }
-
-    return (
-      <Styles>
-        <NavigationBar expand="md" className="navbar">
-          <NavigationBar.Brand href="/">
-              <img className="rnIcon" src={rIcon}></img>
-          </NavigationBar.Brand>
-
-          <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>
-          <NavigationBar.Collapse id="basic-navbar-nav" className="justify-content-end">
-            {routes.map(route => (
-              <Nav.Item>
-
-              <Nav.Link
-                key={route.path}
-                as={NavLink}
-                to={route.path}
-                activeClassName="active"
-                exact
-              >
-                {route.name}
-              </Nav.Link>
-              </Nav.Item>
-            ))}
-          </NavigationBar.Collapse>
-        </NavigationBar>
-      </Styles>
-    )
-}
-
-export { Navbar, routes };
+  export { Navbar, routes };
