@@ -24,8 +24,11 @@ export default class Resume extends Component {
         <div style={{ alignItems: "center" }}>
             <Document 
                 file={pdf_file} 
-                onLoadSuccess={() => document.getElementById("root").style.width = "682px"}
-            >
+                onLoadSuccess={() => {
+                    if (window.innerWidth < 682) {
+                        document.getElementById("root").style.width = "682px"
+                    }
+                }}>
                 <Page pageNumber={1} />
             </Document>
         </div>
