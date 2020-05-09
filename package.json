@@ -15,7 +15,11 @@
     "react-dom": "^16.13.1",
     "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
+<<<<<<< HEAD
     "react-scripts": "^3.4.1",
+=======
+    "react-scripts": "3.4.1",
+>>>>>>> 406a7b598edbd2c164496f6ec70f2134f8c3d237
     "react-transition-group": "^4.3.0",
     "reactstrap": "^8.4.1",
     "styled-components": "^5.0.1"
