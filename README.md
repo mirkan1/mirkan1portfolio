@@ -1,2 +1,2 @@
 mirkan1.herokuapp.com
-// Devs: 3bru, Mirkan 
+// Developers: 3bru, Mirkan 
