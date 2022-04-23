@@ -109,27 +109,26 @@ export default function Footer() {
           <div className="row1">
             <h4>About Me</h4>
             <p>I'm Renas Kilic, 
-              a freelance web & software developer based in New Orleans. 
-              I have been developing and maintaining websites for many years. 
-              My aim is to provide businesses and users with the web solutions they require to up their online web presence and improve their profits! 
-              I specialise in Web App development.</p>
+              Freelancer from New Orleans. 
+              Developing and maintaining websites for many years. 
+              Specialised in secure transcations including web3 transations</p>
           </div>
           <div className="row2">
-            <h4>Contact Me</h4>
-            <p>Mobile: +1 504 6038251</p>
-            <p>Email: mirkanbaba1@gmail.com</p>
-            <a className="hvr-underline-from-left" href="/privacy">Privacy Policy</a>
+            <h4 hidden>Contact Me</h4>
+            <p hidden>Mobile: NOPE</p>
+            <p>Email:<a href="mailto:mirkanbaba1@gmail.com?subject=Hello Mirkan, I clicked the button from your website;">&nbsp;mirkan</a></p>
+            <a className="hvr-underline-from-left" href="/privacy" hidden>Privacy Policy</a>
           </div>
         </Container>
         <div className="copyright-div">
           <hr/>
           <div className="footer-b">
             <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
-            <a href="https://www.facebook.com/R.mirkan" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;facebook</a>
+            <a href="https://www.facebook.com/R.mirkan" target="_blank" rel="noopener noreferrer"><img src={facebookLogo} height="32" width="32" alt="media-link" hidden></img>&nbsp;&nbsp;facebook</a>
             <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
             <a href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
           </div>
-            <p>© 2020 Renas M. Kilic</p>
+            <p>R. M. Kilic © 2022/04/23</p>
         </div>
       </div>
     </Styles>

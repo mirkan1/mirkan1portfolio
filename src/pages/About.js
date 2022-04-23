@@ -4,16 +4,19 @@ export default function About() {
   return (
     <div>
           <h5>Hello, my name is Renas Kilic.</h5>
-          <p>I am a software developer based in New Orleans, 
-          specializing in full stack web development, mainly front-end,
-          and always open to learn new technologies. <br/>
-          My interests changes often because of my ADHD but...</p>
-          <b>Current interests:</b>
+          <p>I am a software developer from Turkey</p>
+          <b>Technologies that I use:</b>
           <ol style={{listStyle: "square", paddingLeft: "5vh"}}>
-            <li>Unity game development</li>
-            <li>mobile development with <a className="hvr-underline-from-left" href="https://expo.io/snacks/@raq/">react-native</a></li>
-            <li><a className="hvr-underline-from-left" href="https://giphy.com/channel/mirkankl">Pixel art</a></li>
-            <li>Data visualization</li>
+            <li>🐍Python</li>
+            <li>🐼Pandas(python)</li>
+            <li>🍾Flask(python)</li>
+            <li>🖥AWS</li>
+            <li>🈁クHeroku</li>
+            <li>⚛React / React-native</li>
+            <li>🎨HTML/CSS/JS</li>
+            <li>💾MySQL</li>
+            <li>📊GraphQL</li>
+            <li>🖨API development</li>
           </ol>
       </div>
   )
