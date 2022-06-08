@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Document, Page, pdfjs } from "react-pdf";
 import styled from 'styled-components';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-var file_loc = "C:/Users/Raq/Desktop/My projects/mirkan1Portfolio/src/pdf/Renas_Kilic_Resume.pdf"
+var file_loc = "STATIC PDF FILE LOCATION HERE"
 
 
 const Styles = styled.div`
