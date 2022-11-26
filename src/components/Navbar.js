@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import rIcon from '../img/react-ico-evenXY.png';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
-i// mport Blog from '../pages/Blog';
+// import Blog from '../pages/Blog';
 import Work from '../pages/Work';
 import Resume from '../pages/Resume';
 import About from '../pages/About';
