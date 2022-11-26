@@ -122,7 +122,7 @@ export default function Footer() {
             <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
             <a href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
           </div>
-            <p>Renas Mirkan Kilic © 2023</p>
+            <p>Renas Mirkan Kilic © 2022</p>
         </div>
       </div>
     </Styles>
