@@ -11,7 +11,8 @@ export default function About() {
             <li>🥾Django(python)</li>
             <li>🖥AWS</li>
             <li>🈁クHeroku</li>
-            <li>⚛React.js / React-native</li>
+            <li>⚛React</li>
+            <li>📱React-native</li>
             <li>🍜Node.js</li>
             <li>🚄Express.js</li>
             <li>🎨HTML/CSS/JS</li>

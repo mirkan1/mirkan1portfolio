@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import rIcon from '../img/react-ico.png';
+import rIcon from '../img/react-ico-evenXY.png';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
 import Blog from '../pages/Blog';
@@ -11,8 +11,8 @@ import About from '../pages/About';
 const routes = [
     //{ path: '/', name: 'Home', Component: Home },
     { path: '/', name: 'Home', Component: About },
-    { path: '/work', name: 'Work', Component: Work },
-    { path: '/blog', name: 'Blog', Component: Blog },
+    { path: '/work', name: 'Previous#works', Component: Work },
+    // { path: '/blog', name: 'Blog', Component: Blog },
     { path: '/resume', name: 'Resume', Component: Resume },
     //{ path: '*', name: "NoMatch", Component: NoMatch}
 ]
@@ -24,18 +24,27 @@ function Navbar() {
   
   function infoButton() {
     let ele = document.getElementsByClassName('navbar')[0];
-    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];
-    
+    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];    
     if (!size) {
       ele.style["max-height"] = "300px";
+      navbarCollapse.style["display"] = "block";
+      //navbarCollapse.style["position"] = "fixed";
       setTimeout(function(){ 
-        navbarCollapse.style["margin"] = "0 0 0 70%"; 
-      }, 100);
-      // navbarCollapse.style["align-items"] = "flex-end";
+        navbarCollapse.style["margin-left"] = "60%"; 
+        setTimeout(function(){
+          navbarCollapse.style["flex-direction"] = "column";
+          navbarCollapse.style["align-items"] = "end";
+          navbarCollapse.style.removeProperty("margin-left");
+          navbarCollapse.style["display"] = "flex";
+        }, 375);
+      }, 300);
     } else {
-      ele.style["max-height"] = "100px"; 
-      navbarCollapse.style["margin"] = "0"
-      // navbarCollapse.style["display"] = "none";
+      setTimeout(function(){
+        navbarCollapse.style["display"] = "none";
+        navbarCollapse.style.removeProperty("flex-direction");
+        navbarCollapse.style.removeProperty("align-items");
+      }, 300);
+      ele.style["max-height"] = "125px";
     }
     sizeChange(!size)
   }
@@ -68,24 +77,32 @@ function Navbar() {
       </Styles>
     )
   }
+
+  
   
 const Styles = styled.div`
+    .nav-link {
+      color: #cbad09;
+    }
     .navbar {
-        font-family: "Ubuntu","Roboto";
+        font-family: "Ubuntu","Roboto", Arial, sans-serif;
         background-color: #202020;
         color: #E6E6E6;
-        height: 300px;
-        max-height: 100px;
+        max-height: 125px;
+        max-width: 100vw;
         positiion: relative;
         display: flex;
         flex-direction: row;
         border-top: 4px black solid;
         border-bottom: 4px black solid;
         margin-bottom: 50px;
-        transition max-height 0.3s ease-out;
+        transition: 0.3s ease-out;
+        align-items: baseline;
     }
 
     .rnIcon {
+        border: 2px solid #E6E6E6;
+        border-radius: 50%;
         height: 80px;
         transition: 3s;
 
@@ -121,13 +138,11 @@ const Styles = styled.div`
     }
 
     .nav-item a {
-      width: 20%;
+      text-align: right;
+      width: fit-content;
       height: 25%;
-      align-items: right;
-      color: #E6E6E6;
       text-decoration: none;
-      text-align: center;
-      font-size: 20px;
+      font-size: 1.3rem;
 
       &:hover {
         color: #afafaf;
@@ -135,20 +150,19 @@ const Styles = styled.div`
     }
 
     .navbar-collapse {
-      margin: 0;
-      transition: margin 1000ms ease-in-out;
+      display: none;
+      transition: margin 500ms ease-in-out;
     }
 
     @media only screen and (min-width: 767px) {
-      // .navbar-collapse {
-      //   margin: 0;
-      //   transition: margin 1000ms ease-in-out;
-      // }
       .navbar-toggle {
           font-size: 15px;
         }
     }
     @media only screen and (max-width: 767px) {
+      .navbar-collapse {
+        width: 94vw;
+      }
       .navbar-toggle > a {
           font-size: 15px;
         }

@@ -20,8 +20,18 @@ import styled from 'styled-components';
 
 
 const Styles = styled.div`
-  background-color: #202020;
-  height: 100vh;
+  .fade-transition {
+    &-enter {
+      opacity: 0;
+    }
+    &-enter-active {
+      opacity: 1;
+      transition: opacity 500ms;
+    }
+    &-exit {
+      opacity: 1;
+    }
+  }
 
   hr {
     background-color: #efefef;
@@ -59,23 +69,6 @@ const Styles = styled.div`
 
 `;
 
-// const AnimatedSwitch = withRouter(({ location }) => (
-//   <TransitionGroup>
-//     <CSSTransition 
-//       key={location.key} 
-//       classNames="slide" 
-//       timeout={1000}
-//     >
-//       <Switch>
-//       <Route exact path="/" component={Home} />
-//               <Route path="/about" component={About} />
-//               <Route path="/contact" component={Contact} />
-//               <Route component={NoMatch} />
-//       </Switch>
-//     </CSSTransition>
-//   </TransitionGroup>
-// ));
-
 class App extends Component {
   generateKey = (pre) => {
     return `${ new Date().getTime() }`;
@@ -92,9 +85,8 @@ class App extends Component {
             <TransitionGroup>
               <CSSTransition
                 key={this.generateKey()}
-                timeout={500}
-                classNames="fade"
-                unmountOnExit
+                timeout={200}
+                classNames="fade-transition"
               >
                 <Switch location={location}>
                   <Route exact path="/" component={Privacy} />
