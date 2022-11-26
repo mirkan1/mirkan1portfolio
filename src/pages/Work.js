@@ -164,8 +164,12 @@ const workPatern = function workPatern(props, index)  {
       {props.info.map(i => (
         <p>{i}</p>
       ))}
-      <a className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" href={props.
-      link} target="_blank" rel="noopener noreferrer">Source Code</a>
+      <a 
+        className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
+        href={props.link} 
+        target="_blank" 
+        rel="noopener noreferrer">
+      Source Code</a>
          
     </div>
     </Styles>

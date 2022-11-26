@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import rIcon from '../img/react-ico-evenXY.png';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
-import Blog from '../pages/Blog';
+i// mport Blog from '../pages/Blog';
 import Work from '../pages/Work';
 import Resume from '../pages/Resume';
 import About from '../pages/About';
@@ -53,7 +53,7 @@ function Navbar() {
     <Styles>
         <NavigationBar expand="md" className="navbar">
           <NavigationBar.Brand href="/">
-            <img className="rnIcon" src={rIcon}></img>
+            <img ald="react icon" className="rnIcon" src={rIcon}></img>
           </NavigationBar.Brand>
 
           <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>

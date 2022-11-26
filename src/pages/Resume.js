@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Document, Page, pdfjs } from "react-pdf";
 import styled from 'styled-components';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-var file_loc = "STATIC PDF FILE LOCATION HERE"
 
 
 const Styles = styled.div`
@@ -31,7 +30,7 @@ export default class Resume extends Component {
         this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
 
     render() {
-        const { pageNumber, numPages } = this.state;
+        // const { pageNumber, numPages } = this.state;
         return (
         <Styles>
             <Document 
