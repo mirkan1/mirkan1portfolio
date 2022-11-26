@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('if the copyright is for latest year', () => {
+  const currentYear = new Date().getFullYear().toString()
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(currentYear, { exact: false }); 
   expect(linkElement).toBeInTheDocument();
 });
