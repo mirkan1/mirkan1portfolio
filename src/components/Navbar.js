@@ -53,7 +53,7 @@ function Navbar() {
     <Styles>
         <NavigationBar expand="md" className="navbar">
           <NavigationBar.Brand href="/">
-            <img ald="react icon" className="rnIcon" src={rIcon}></img>
+            <img alt="react icon" className="rnIcon" src={rIcon}></img>
           </NavigationBar.Brand>
 
           <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>
