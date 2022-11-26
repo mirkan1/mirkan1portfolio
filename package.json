@@ -18,7 +18,8 @@
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.3.0",
     "reactstrap": "^8.4.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "start": "react-scripts start",
