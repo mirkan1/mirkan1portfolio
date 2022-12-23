@@ -14,10 +14,15 @@ const Styles = styled.div`
   }
 
   .footer {
-      color: #efefef;
-      height: auto;
-      display: flex;
-      flex-direction: row;
+    color: #efefef;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    column-gap: 10rem;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .copyright-div {
@@ -31,10 +36,7 @@ const Styles = styled.div`
     }
   }
 
-  .row1 {
-    padding: 2.5rem;
-    height: 40%;
-  }
+
 
   h4 {
     font-size: 1.25rem;
@@ -45,16 +47,23 @@ const Styles = styled.div`
     line-height: 1.625;
   }
 
-  .row2 {
-    padding: 2.5rem;
-    height: 60%;
-    text-align: left;
-  }
+
 
   @media only screen and (max-width: 1000px) {
     .footer {
+      color: #efefef;
+      height: auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      -webkit-box-align: center;
+      column-gap: 10rem;
+      padding: 2rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .linkedin {
+      margin-left: 4rem;
     }
 
     .footer-b {
@@ -66,13 +75,7 @@ const Styles = styled.div`
       }
     }
 
-    .row2, .row1 {
-      text-align: center;
-    }
 
-    .row2 {
-      padding-top: 0;
-    }
   }
 
   hr {
@@ -81,7 +84,7 @@ const Styles = styled.div`
 
   .footer-b {
     display: flex;
-    padding: 0 25%;
+    padding: 1rem 25%;
     margin-bottom: 10px;
 
       & > * {
@@ -97,6 +100,7 @@ const Styles = styled.div`
       .footer-b {
         padding: 0 20%;
       }
+
     }
 
 `
@@ -120,7 +124,7 @@ export default function Footer() {
           <div className="footer-b">
             <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
             <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
-            <a href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
+            <a className="linkedin" href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
           </div>
             <p>Renas Mirkan Kilic © 2022</p>
         </div>
