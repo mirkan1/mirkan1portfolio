@@ -1,7 +1,7 @@
 {
-  "name": "in",
+  "name": "mirkan1portfolio",
   "version": "0.1.3",
-  "homepage": "https://mirkan1.github.io/in",
+  "homepage": "https://mirkan1.github.io/mirkan1portfolio",
   "private": true,
   "engines": {
     "node": "16.x"
