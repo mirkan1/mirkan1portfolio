@@ -59,9 +59,8 @@ function Navbar() {
           <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>
           <NavigationBar.Collapse id="basic-navbar-nav" className="justify-content-end">
             {routes.map(route => (
-              <Nav.Item>
+              <Nav.Item key={route.path} >
               <Nav.Link
-                key={route.path}
                 as={NavLink}
                 to={route.path}
                 activeClassName="active"

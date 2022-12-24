@@ -30,16 +30,12 @@ export default class Resume extends Component {
         this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
 
     render() {
-        // const { pageNumber, numPages } = this.state;
         return (
         <Styles>
             <Document 
                 file={pdf_file} 
                 onLoadSuccess={() => {
-                    // if (window.innerWidth < 682) {
-                    //     document.getElementById("root").style.width = "682px"
-                    // }
-                    document.querySelector("#access-info").hidden = true
+                    console.info("pdf loaded")
                 }}>
                 <Page className={["flexPage"]} width={document.querySelector('#root').clientWidth/1.45} height={document.querySelector('#root').clientHeight/1.45} pageNumber={1} />
             </Document>

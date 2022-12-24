@@ -154,7 +154,7 @@ const projects = [
 const workPatern = function workPatern(props, index)  {
   return (
     <Styles>
-    <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}}>
+    <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
     <div className="badge-parent">
       <Badge className="badge-fix" variant="warning">{props.date}</Badge>
     </div>
@@ -169,8 +169,7 @@ const workPatern = function workPatern(props, index)  {
         href={props.link} 
         target="_blank" 
         rel="noopener noreferrer">
-      Source Code</a>
-         
+      Source Code</a> 
     </div>
     </Styles>
   )
