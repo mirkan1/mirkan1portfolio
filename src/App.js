@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import { Jumbotron as Jumbo, Row, Container } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group';
 import { Navbar } from './components/Navbar';
 import backgroundImage from './img/bg3jpg.jpg';
