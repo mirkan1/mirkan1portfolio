@@ -22,6 +22,8 @@ export default function About() {
           <li>📊GraphQL</li>
           <li>🦄Gunicorn</li>
           <li>🚂❎Nginx</li>
+          <li>🐜Kafka</li>
+          <li>🎩Jenkins</li>
         </ol>
       </div>
     </div>
