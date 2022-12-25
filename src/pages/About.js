@@ -30,6 +30,7 @@ export default function About() {
     { icon: '🈁', text: 'Heroku' },
     { icon: '💾', text: 'MySQL' },
     { icon: '📊', text: 'GraphQL' },
+    { icon: '🐵', text: 'MongoDB' },
     { icon: '🦄', text: 'Gunicorn' },
     { icon: '🚂', text: 'Nginx' },
     { icon: '🐜', text: 'Kafka' },
