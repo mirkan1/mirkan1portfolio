@@ -24,7 +24,6 @@ export default function About() {
     { icon: '⚛', text: 'React' },
     { icon: '📱', text: 'React-native' },
     { icon: '🍜', text: 'Node.js' },
-    { icon: '🚄', text: 'Express.js' },
     { icon: '🎨', text: 'HTML/CSS/JS' },
     { icon: '🖥', text: 'AWS' },
     { icon: '🈁', text: 'Heroku' },
@@ -35,6 +34,7 @@ export default function About() {
     { icon: '🚂', text: 'Nginx' },
     { icon: '🐜', text: 'Kafka' },
     { icon: '🎩', text: 'Jenkins' },
+    { icon: '🐳', text: 'Docker' },
   ];
 
   return (
