@@ -35,6 +35,8 @@ export default function About() {
     { icon: '🐜', text: 'Kafka' },
     { icon: '🎩', text: 'Jenkins' },
     { icon: '🐳', text: 'Docker' },
+    { icon: '🕸', text: 'Git' },
+    { icon: '💎', text: 'Solidity' },
   ];
 
   return (
