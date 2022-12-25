@@ -15,10 +15,16 @@
     height: 100%;
 }
 
-li {
-    font-size: 1.5em;
-}
-
 h1 {
     text-align: center;
+}
+
+.emoji-icon {
+    font-size: 22px; /* specify the font size of the icons */
+    vertical-align: middle; /* align the icon with the text vertically */
+    font-style: normal; /* make sure the icon is not italic */
+}
+  
+td {
+    text-align: left;
 }
