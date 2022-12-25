@@ -1,7 +1,6 @@
 import React from 'react'
 import "./about.css"
 
-
 const ListTable = ({ items }) => {
   return (
     <table>
@@ -23,6 +22,7 @@ export default function About() {
     { icon: '🥾', text: 'Django(python)' },
     { icon: '🖥', text: 'AWS' },
     { icon: '🈁', text: 'Heroku' },
+    { icon: '👔', text: 'TypeScript' },
     { icon: '⚛', text: 'React' },
     { icon: '📱', text: 'React-native' },
     { icon: '🍜', text: 'Node.js' },
@@ -35,6 +35,7 @@ export default function About() {
     { icon: '🐜', text: 'Kafka' },
     { icon: '🎩', text: 'Jenkins' },
   ];
+
   return (
     <div className="tech-parent-column">
       <h1>Familiar Technologies</h1>
