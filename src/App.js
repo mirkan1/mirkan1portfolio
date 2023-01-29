@@ -21,7 +21,7 @@ class App extends Component {
         <Router>
           <Navbar/>
           <Jumbo className="jumbo">
-            <Container style={{marginTop: "110px", minHeight: "60vh"}}>
+            <Container style={{ minHeight: "50vh"}}>
               <Route exact path="/resume" component={Resume} >
                 {({ match }) => (
                   <CSSTransition
