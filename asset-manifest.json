@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mirkan1portfolio/static/css/main.98e681e1.css",
-    "main.js": "/mirkan1portfolio/static/js/main.316f0d81.js",
+    "main.js": "/mirkan1portfolio/static/js/main.54c64278.js",
     "pdfjsWorker.js": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js",
     "static/media/Renas_Kilic_Resume.pdf": "/mirkan1portfolio/static/media/Renas_Kilic_Resume.e60be157d761abe9f626.pdf",
     "static/media/Ubuntu-R.ttf": "/mirkan1portfolio/static/media/Ubuntu-R.768d480f584ebef78ff5.ttf",
@@ -9,11 +9,11 @@
     "static/media/react-ico-evenXY.png": "/mirkan1portfolio/static/media/react-ico-evenXY.ecb26892d2e7eae98fd2.png",
     "index.html": "/mirkan1portfolio/index.html",
     "main.98e681e1.css.map": "/mirkan1portfolio/static/css/main.98e681e1.css.map",
-    "main.316f0d81.js.map": "/mirkan1portfolio/static/js/main.316f0d81.js.map",
+    "main.54c64278.js.map": "/mirkan1portfolio/static/js/main.54c64278.js.map",
     "pdfjsWorker.a3376d94.chunk.js.map": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98e681e1.css",
-    "static/js/main.316f0d81.js"
+    "static/js/main.54c64278.js"
   ]
 }
