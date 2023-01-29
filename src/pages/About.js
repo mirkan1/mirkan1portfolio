@@ -4,12 +4,14 @@ import "./about.css"
 const ListTable = ({ items }) => {
   return (
     <table>
-      {items.map((item) => (
-        <tr key={item.text}>
-          <td><i className="emoji-icon">{item.icon}</i></td>
-          <td>{item.text}</td>
-        </tr>
-      ))}
+      <tbody>
+        {items.map((item) => (
+          <tr key={item.text}>
+            <td><i className="emoji-icon">{item.icon}</i></td>
+            <td>{item.text}</td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   );
 };
