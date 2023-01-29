@@ -83,7 +83,9 @@ const projects = [
     language: "HTML, CSS, JS", 
     link: "https://github.com/mirkan1/kcchatter", 
     info: [
-      "I started using Flask and HTML but afterawhile I switched to Typescript and React because I learnt that it was easier to use and more efficient.",
+      "I initially began working with Flask and HTML, but eventually transitioned to using Typescript and React as I discovered that it offered a more streamlined and efficient experience.",
+      "Classification[class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)] helps developers easily navigate their paths.",
+      
     ],
     date: "2022"
   },
@@ -97,13 +99,6 @@ const projects = [
     ],
     date: "2021"
   },
-  // {
-  //   title: "", 
-  //   subInfo: "", 
-  //   language: "", 
-  //   link: "", 
-  //   info: [] 
-  // },
   {
     title: "This Website", 
     subInfo: "My portfolio website aka this website", 
@@ -151,7 +146,70 @@ const projects = [
       date: "2017" 
   },
 ]
-const workPatern = function workPatern(props, index)  {
+
+// const aTag = (matches) => {
+//   const numbers = [1,2,3,4,5]
+//   const listItems = numbers.map((number) =>
+//   <li>{number}</li>
+// );
+//   const queuArray = matches.map(match => {
+//       const link = match.split("(")[1].split(")")[0];
+//       const linkText = match.split("(")[0];
+      
+//       //queuArray.push({text1: linkText, link: link, text2: ")"});
+//       })
+//   return listItems;
+//     return (
+//         <p>
+//           {text1}
+//           <a href={link} target="_blank" rel="noreferrer" className="hvr-underline-from-left">{link}</a>
+//           {text2}
+//         </p>
+//     )
+// }
+const aTag = (link, text) => {
+  return (
+    <a href={link} target="_blank" rel="noreferrer" className="hvr-underline-from-left">{text}</a>
+  )
+}
+
+const pTag = (text) => {
+  return (
+    <p>{text}</p>
+  )
+}
+
+const pTagInner = (text1, text2, innerTag) => {
+  return (
+    <p>{text1}{innerTag}{text2}</p>
+  )
+}
+
+const infoPatternEncode = (text) => {
+    // class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)
+    // we need to catch above pattern and replace it with a link
+    text = new String(text)
+    const regex = /[a-zA-Z\-\!\@\#\_]*\((.*?)\)/g;
+    const matches = text.match(regex);
+    const queueArray = new Array([HTMLElement]);
+    if (matches) {
+      matches.forEach(match => {
+        const link = match.split("(")[1].split(")")[0];
+        const linkText = match.split("(")[0];
+        const remaining = text.split(match)[1];
+        const before = text.split(match)[0];
+        // queueArray.push(pTag(before));
+        // queueArray.push(aTag(link, linkText));
+        // queueArray.push(pTag(remaining));
+        queueArray.push(pTagInner(before, remaining, aTag(link, linkText)))
+      });
+    } else {
+      queueArray.push(pTag(text))
+    }
+    return queueArray.map(elem => elem);
+};
+const workPattern = (props, index) => {
+  const encodedInfo = props.info.map(i => infoPatternEncode(i));
   return (
     <Styles>
     <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
@@ -161,9 +219,7 @@ const workPatern = function workPatern(props, index)  {
       <h3>{props.title}</h3>
       <h4>{props.language}</h4>
       <h5>{props.subInfo}</h5>
-      {props.info.map(i => (
-        <p>{i}</p>
-      ))}
+      {encodedInfo}
       <a 
         className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
         href={props.link} 
@@ -176,12 +232,6 @@ const workPatern = function workPatern(props, index)  {
 } 
 
 export default function Work() {
-  return (
-    <>
-      {projects.map((p, index) => (
-        workPatern(p, index)
-      ))}
-    </>
-  )
-    
+  const pattern = projects.map((p, index) => ( workPattern(p, index) ))
+  return pattern    
 }
