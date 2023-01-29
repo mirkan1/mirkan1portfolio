@@ -1,6 +1,6 @@
 import React from 'react'
 import { Badge } from "react-bootstrap";
-// #eed602
+/* eslint-disable-next-line no-useless-escape */
 import styled from 'styled-components';
 
 const Styles = styled.div`
