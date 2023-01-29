@@ -147,26 +147,6 @@ const projects = [
   },
 ]
 
-// const aTag = (matches) => {
-//   const numbers = [1,2,3,4,5]
-//   const listItems = numbers.map((number) =>
-//   <li>{number}</li>
-// );
-//   const queuArray = matches.map(match => {
-//       const link = match.split("(")[1].split(")")[0];
-//       const linkText = match.split("(")[0];
-      
-//       //queuArray.push({text1: linkText, link: link, text2: ")"});
-//       })
-//   return listItems;
-//     return (
-//         <p>
-//           {text1}
-//           <a href={link} target="_blank" rel="noreferrer" className="hvr-underline-from-left">{link}</a>
-//           {text2}
-//         </p>
-//     )
-// }
 const aTag = (link, text) => {
   return (
     <a href={link} target="_blank" rel="noreferrer" className="hvr-underline-from-left">{text}</a>
@@ -187,8 +167,7 @@ const pTagInner = (text1, text2, innerTag) => {
 
 const infoPatternEncode = (text) => {
     // class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)
-    // we need to catch above pattern and replace it with a link
-    text = new String(text)
+    text = text.toString();
     const regex = /[a-zA-Z\-\!\@\#\_]*\((.*?)\)/g;
     const matches = text.match(regex);
     const queueArray = new Array([HTMLElement]);
@@ -198,9 +177,6 @@ const infoPatternEncode = (text) => {
         const linkText = match.split("(")[0];
         const remaining = text.split(match)[1];
         const before = text.split(match)[0];
-        // queueArray.push(pTag(before));
-        // queueArray.push(aTag(link, linkText));
-        // queueArray.push(pTag(remaining));
         queueArray.push(pTagInner(before, remaining, aTag(link, linkText)))
       });
     } else {
