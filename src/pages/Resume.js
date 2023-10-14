@@ -1,4 +1,4 @@
-import pdf_file from "../pdf/Renas_Kilic_Resume.pdf";
+import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
 import React, { Component } from 'react';
 import { Document, Page, pdfjs } from "react-pdf";
 import styled from 'styled-components';
