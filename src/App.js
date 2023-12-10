@@ -9,7 +9,6 @@ import Privacy from './pages/Privacy';
 import Resume from './pages/Resume';
 import About from './pages/About';
 import Work from './pages/Work';
-import { NoMatch } from './pages/NoMatch';
 import styled from 'styled-components';
 import './css/App.css';
 import './css/hover-min.css';
@@ -65,7 +64,6 @@ class App extends Component {
                 )}
               </Route>
               <Route path="/privacy" component={Privacy} />
-              <Route path="/:any" component={NoMatch} />
             </Container>
           </Jumbo>
         </Router>
