@@ -1,21 +1,7 @@
 import React, { Component } from "react";
 import Pagination from "../components/Pagination";
 
-const data = {
-  content: {
-    body: [
-      {
-        title: "first_blog_post",
-        published: "true",
-        location: "New Orleans",
-        description: "123",
-        tags: ["Javascript", "Python"],
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      }
-    ],
-  },
-};
+const data ={content:{body: []}};
 
 export default class Blog extends Component {
   constructor(props) {
@@ -46,7 +32,6 @@ export default class Blog extends Component {
           {data.content.body.map((block) => (
             <>
               <p>Title: {block.title}</p>
-              {/* <p>published: {block.published}</p> */}
               <p>Location: {block.location}</p>
               <p>Description: {block.description}</p>
               <p>Tags: {block.tags.map(e=><span>{e}&nbsp;</span>)}</p>

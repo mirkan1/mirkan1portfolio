@@ -95,7 +95,6 @@ const projects = [
     info: [
       "I initially began working with Flask and HTML, but eventually transitioned to using Typescript and React as I discovered that it offered a more streamlined and efficient experience.",
       "Classification[class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)] helps developers easily navigate their paths.",
-      
     ],
     date: "2022"
   },
