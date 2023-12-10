@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mirkan1portfolio/static/css/main.5d711698.css",
-    "main.js": "/mirkan1portfolio/static/js/main.fc42970a.js",
+    "main.js": "/mirkan1portfolio/static/js/main.95e7f905.js",
     "pdfjsWorker.js": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js",
     "static/media/fa-duotone-900.eot": "/mirkan1portfolio/static/media/fa-duotone-900.67a989af1b23699174d6.eot",
     "static/media/Renas_Kilic_Resume_2023.pdf": "/mirkan1portfolio/static/media/Renas_Kilic_Resume_2023.dc37699a51966f15580a.pdf",
@@ -24,11 +24,11 @@
     "static/media/fa-brands-400.woff2": "/mirkan1portfolio/static/media/fa-brands-400.e7433cdfdc3e9a36da4e.woff2",
     "index.html": "/mirkan1portfolio/index.html",
     "main.5d711698.css.map": "/mirkan1portfolio/static/css/main.5d711698.css.map",
-    "main.fc42970a.js.map": "/mirkan1portfolio/static/js/main.fc42970a.js.map",
+    "main.95e7f905.js.map": "/mirkan1portfolio/static/js/main.95e7f905.js.map",
     "pdfjsWorker.a3376d94.chunk.js.map": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d711698.css",
-    "static/js/main.fc42970a.js"
+    "static/js/main.95e7f905.js"
   ]
 }
