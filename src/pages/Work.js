@@ -83,7 +83,7 @@ const projects = [
     language: "Python", 
     link: "https://github.com/mirkan1/SdPaint", 
     info: ["I found this app on reddit then started to write on it, it is really awesome and still being meanted by me and my friend", 
-    "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything"
+    "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", 
     ],
     date: "2023"
   },
