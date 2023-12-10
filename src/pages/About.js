@@ -27,7 +27,9 @@ export default function About() {
     { icon: '📱', text: 'React-native' },
     { icon: '🍜', text: 'Node.js' },
     { icon: '🎨', text: 'HTML/CSS/JS' },
-    { icon: '🖥', text: 'AWS' },
+    { icon: '🖥', text: 'AWS' }
+  ];
+  const listItems2 = [
     { icon: '🈁', text: 'Heroku' },
     { icon: '💾', text: 'MySQL' },
     { icon: '📊', text: 'GraphQL' },
@@ -46,6 +48,7 @@ export default function About() {
       <h1>Familiar Technologies</h1>
       <div className="tech-parent-row">
         <ListTable items={listItems} />
+        <ListTable items={listItems2} />
       </div>
     </div>
   )

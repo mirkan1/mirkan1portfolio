@@ -5,6 +5,7 @@ import linkedinLogo from '../icons/linkedin.png';
 import twitterLogo from '../icons/twitter.png';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import "../css/fontawesome.all.min.css";
 
 const Styles = styled.div`
   .borderer {
@@ -56,14 +57,14 @@ const Styles = styled.div`
       display: flex;
       flex-direction: row;
       -webkit-box-align: center;
-      column-gap: 10rem;
-      padding: 2rem;
+      column-gap: auto;
+      padding: 1rem 0px;
       justify-content: space-around;
       align-items: center;
     }
 
     .linkedin {
-      margin-left: 4rem;
+      margin-left: inherit;
     }
 
     .footer-b {
@@ -71,8 +72,17 @@ const Styles = styled.div`
 
       & > * {
         margin-top: 10px;
+        flex-basis: 30%;
+      }
+    }
+    .mail-me {
+      flex-wrap: wrap;
+
+      & > * {
+        margin-bottom: 10px;
         flex-basis: 50%;
       }
+
     }
 
 
@@ -84,7 +94,7 @@ const Styles = styled.div`
 
   .footer-b {
     display: flex;
-    padding: 1rem 25%;
+    padding: 10px 0px;
     margin-bottom: 10px;
 
       & > * {
@@ -95,12 +105,44 @@ const Styles = styled.div`
         filter: invert(100%);
       }
     }
+    .mail-me {
+      display: flex;
+      direction: row;
+      gap-column: 5px;
+    }
 
     @media only screen and (max-width: 700px) {
       .footer-b {
-        padding: 0 20%;
+        padding: 1rem 25%;
+        & > * {
+          margin-top: 10px;
+          flex-basis: 50%;
+        }
+      }      
+      .mail-me {
+        padding: 0px 1rem;
+        & > * {
+          margin-bottom: 10px;
+          flex-basis: 50%;
+        }
       }
+    }
 
+    @media only screen and (min-width: 1200px) {
+      .footer-b {
+        padding: 1rem 25%;
+        & > * {
+          margin-top: 10px;
+          flex-basis: 50%;
+        }
+      }      
+      .mail-me {
+        padding: 0px 1rem;
+        & > * {
+          margin-bottom: 10px;
+          flex-basis: 50%;
+        }
+      }
     }
 
 `
@@ -109,24 +151,21 @@ export default function Footer() {
   return (
     <Styles>
       <div className="borderer">
-        <Container className="footer">
-          <div className="row1">
-            <h4>About Me</h4>
-            <p>I'm Developing, maintaining, and updating software applications.</p>
-          </div>
-          <div className="row2">
-            <p><a href="mailto:mirkanbaba1@gmail.com">Mail me about anything</a></p>
-            <a className="hvr-underline-from-left" href="/privacy" hidden>Privacy Policy</a>
-          </div>
-        </Container>
         <div className="copyright-div">
-          <hr/>
           <div className="footer-b">
             <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
             <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
             <a className="linkedin" href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
+          </div>          
+          <hr/>
+          <div className="mail-me">
+            <div>
+              <p><a href="mailto:mirkanbaba1@gmail.com">Mail me <i class="fa fa-mind-share"></i></a></p>
+            </div>
+            <div>
+              <p>Renas Mirkan Kilic © 2024</p>
+            </div>
           </div>
-            <p>Renas Mirkan Kilic © 2023</p>
         </div>
       </div>
     </Styles>

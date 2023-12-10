@@ -32,13 +32,14 @@ export default class Resume extends Component {
     render() {
         return (
         <Styles>
-            <Document 
+            {/* <Document 
                 file={pdf_file} 
                 onLoadSuccess={() => {
                     console.info("pdf loaded")
                 }}>
                 <Page className={["flexPage"]} width={document.querySelector('#root').clientWidth/1.45} height={document.querySelector('#root').clientHeight/1.45} pageNumber={1} />
-            </Document>
+            
+            </Document> */}
             <a href={pdf_file} download>download as .pdf</a>
         </Styles>
         )
