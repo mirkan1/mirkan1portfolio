@@ -1,0 +1,30 @@
+.tech-parent-column {  
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tech-parent-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.emoji-icon {
+    font-size: 22px; /* specify the font size of the icons */
+    vertical-align: middle; /* align the icon with the text vertically */
+    font-style: normal; /* make sure the icon is not italic */
+}
+  
+td {
+    text-align: left;
+}
