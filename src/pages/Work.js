@@ -78,7 +78,17 @@ const Styles = styled.div`
 
 const projects = [
   {
-    title: "Kcchatter", 
+    title: "Stable Diffusion Paint", 
+    subInfo: "AI backed paint application", 
+    language: "Python", 
+    link: "https://github.com/mirkan1/SdPaint", 
+    info: ["I found this app on reddit then started to write on it, it is really awesome and still being meanted by me and my friend", 
+    "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything"
+    ],
+    date: "2023"
+  },
+  {
+    title: "Jotform api react web integration with cache system and mongoDB", 
     subInfo: "A few websites to talk about", 
     language: "HTML, CSS, JS", 
     link: "https://github.com/mirkan1/kcchatter", 
