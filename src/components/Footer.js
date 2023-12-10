@@ -1,9 +1,7 @@
 import React from 'react';
 import githubLogo from '../icons/GitHub-Mark-32px.png';
-// import facebookLogo from '../icons/facebook.png';
 import linkedinLogo from '../icons/linkedin.png';
 import twitterLogo from '../icons/twitter.png';
-import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import "../css/fontawesome.all.min.css";
 
