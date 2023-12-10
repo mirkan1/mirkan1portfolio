@@ -1,19 +1,34 @@
 {
   "files": {
-    "main.css": "/mirkan1portfolio/static/css/main.98e681e1.css",
-    "main.js": "/mirkan1portfolio/static/js/main.d5782d91.js",
+    "main.css": "/mirkan1portfolio/static/css/main.5d711698.css",
+    "main.js": "/mirkan1portfolio/static/js/main.bef4ad05.js",
     "pdfjsWorker.js": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js",
+    "static/media/fa-duotone-900.eot": "/mirkan1portfolio/static/media/fa-duotone-900.67a989af1b23699174d6.eot",
     "static/media/Renas_Kilic_Resume_2023.pdf": "/mirkan1portfolio/static/media/Renas_Kilic_Resume_2023.dc37699a51966f15580a.pdf",
+    "static/media/fa-light-300.eot": "/mirkan1portfolio/static/media/fa-light-300.bf4d02d2b9f1e3752386.eot",
+    "static/media/fa-regular-400.eot": "/mirkan1portfolio/static/media/fa-regular-400.6e629a19381c910f72a6.eot",
+    "static/media/fa-solid-900.eot": "/mirkan1portfolio/static/media/fa-solid-900.52e50a473ce5a810b96c.eot",
     "static/media/Ubuntu-R.ttf": "/mirkan1portfolio/static/media/Ubuntu-R.768d480f584ebef78ff5.ttf",
     "static/media/bg3jpg.jpg": "/mirkan1portfolio/static/media/bg3jpg.c66b33486bb6fa499fd3.jpg",
+    "static/media/fa-duotone-900.woff": "/mirkan1portfolio/static/media/fa-duotone-900.dc7402e09d134fba2c3a.woff",
+    "static/media/fa-light-300.woff": "/mirkan1portfolio/static/media/fa-light-300.bbd12b90acd4a233eeb7.woff",
+    "static/media/fa-regular-400.woff": "/mirkan1portfolio/static/media/fa-regular-400.d2910d0792778df5a5bd.woff",
+    "static/media/fa-light-300.woff2": "/mirkan1portfolio/static/media/fa-light-300.c2c6d015c833e8eb655e.woff2",
+    "static/media/fa-solid-900.woff": "/mirkan1portfolio/static/media/fa-solid-900.d01c913b964766c49d6f.woff",
+    "static/media/fa-duotone-900.woff2": "/mirkan1portfolio/static/media/fa-duotone-900.e452c0cc54d1097c6c39.woff2",
     "static/media/react-ico-evenXY.png": "/mirkan1portfolio/static/media/react-ico-evenXY.ecb26892d2e7eae98fd2.png",
+    "static/media/fa-regular-400.woff2": "/mirkan1portfolio/static/media/fa-regular-400.a7d88d25939c72fc08b1.woff2",
+    "static/media/fa-solid-900.woff2": "/mirkan1portfolio/static/media/fa-solid-900.eb1e9adc85b4ee46fadd.woff2",
+    "static/media/fa-brands-400.eot": "/mirkan1portfolio/static/media/fa-brands-400.adb7eb654cf334325dea.eot",
+    "static/media/fa-brands-400.woff": "/mirkan1portfolio/static/media/fa-brands-400.e14a4437f10d1f06872d.woff",
+    "static/media/fa-brands-400.woff2": "/mirkan1portfolio/static/media/fa-brands-400.e7433cdfdc3e9a36da4e.woff2",
     "index.html": "/mirkan1portfolio/index.html",
-    "main.98e681e1.css.map": "/mirkan1portfolio/static/css/main.98e681e1.css.map",
-    "main.d5782d91.js.map": "/mirkan1portfolio/static/js/main.d5782d91.js.map",
+    "main.5d711698.css.map": "/mirkan1portfolio/static/css/main.5d711698.css.map",
+    "main.bef4ad05.js.map": "/mirkan1portfolio/static/js/main.bef4ad05.js.map",
     "pdfjsWorker.a3376d94.chunk.js.map": "/mirkan1portfolio/static/js/pdfjsWorker.a3376d94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98e681e1.css",
-    "static/js/main.d5782d91.js"
+    "static/css/main.5d711698.css",
+    "static/js/main.bef4ad05.js"
   ]
 }
