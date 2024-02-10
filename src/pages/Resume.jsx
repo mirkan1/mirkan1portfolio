@@ -1,8 +1,8 @@
 import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
 import React, { Component } from 'react';
-import { pdfjs } from "react-pdf"; // Document, Page
+//import { pdfjs } from "react-pdf"; // Document, Page
 import styled from 'styled-components';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 const Styles = styled.div`

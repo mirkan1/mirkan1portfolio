@@ -4,6 +4,17 @@ import { Badge } from "react-bootstrap";
 import styled from 'styled-components';
 
 const Styles = styled.div`
+  .title {
+
+  }
+  .language {
+    font-size: 12px!important;
+    font-weight: bold!important;
+    text-align: end;
+  }
+  .info {
+
+  }
   .badge-parent {
     display: flex;
     justify-content: flex-end;
@@ -50,7 +61,7 @@ const Styles = styled.div`
     }
 
     & > h4 {
-      color: #cbad09; //#F7D51D;
+      color: #e5c30a;
       font-weight: normal;
       font-size: 12px;
       letter-spacing: 0.4px;
@@ -76,15 +87,21 @@ const Styles = styled.div`
   }
 `;
 
-const projects = [
+const projects = [  
   {
     title: "Stable Diffusion Paint", 
     subInfo: "AI backed paint application", 
     language: "Python", 
     link: "https://github.com/mirkan1/SdPaint", 
-    info: ["I found this app on reddit then started to write on it, it is really awesome and still being meanted by me and my friend", 
-    "I am planning to add more features to it, like saving your work, adding more colors, adding more brushes, adding more tools, adding more filters, adding more effects, adding more everything", 
-    ],
+    info: ["I have been working on this project for a while, I am using Python and stable diffusion."],
+    date: "2024"
+  },
+  {
+    title: "Datareporter", 
+    subInfo: "Data reporting app", 
+    language: "Python, Nodejs, React", 
+    link: "https://github.com/dataminelab/datareporter", 
+    info: ["I have been working on this project for a while, I have been using Python, Nodejs and React. I have been using Python for data processing, Nodejs for backend and React for frontend. I have been using Docker for deployment."],
     date: "2023"
   },
   {
@@ -197,21 +214,21 @@ const workPattern = (props, index) => {
   const encodedInfo = props.info.map(i => infoPatternEncode(i));
   return (
     <Styles>
-    <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
-    <div className="badge-parent">
-      <Badge className="badge-fix" variant="warning">{props.date}</Badge>
-    </div>
-      <h3>{props.title}</h3>
-      <h4>{props.language}</h4>
-      <h5>{props.subInfo}</h5>
-      {encodedInfo}
-      <a 
-        className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
-        href={props.link} 
-        target="_blank" 
-        rel="noopener noreferrer">
-      Source Code</a> 
-    </div>
+      <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
+      <div className="badge-parent">
+        <Badge className="badge-fix" variant="warning">{props.date}</Badge>
+      </div>
+        <h3 className="title" >{props.title}</h3>
+        <h4 className="language">{props.language}</h4>
+        <h5 className="info">{props.subInfo}</h5>
+        {encodedInfo}
+        <a 
+          className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
+          href={props.link} 
+          target="_blank" 
+          rel="noopener noreferrer">
+        Source Code</a> 
+      </div>
     </Styles>
   )
 } 
