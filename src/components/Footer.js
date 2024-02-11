@@ -14,12 +14,6 @@ export default function Footer() {
           <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
           <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
           <a className="linkedin" href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
-        </div>          
-        <hr/>
-        <div className="mail-me">
-          <div>
-            <p><a href="mailto:mirkanbaba1@gmail.com">Mail me <i class="fa fa-mind-share"></i></a></p>
-          </div>
         </div>
       </div>
     </div>
