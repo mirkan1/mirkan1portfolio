@@ -1,4 +1,4 @@
-import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
+// import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
 import React, { Component } from 'react';
 import "../css/resume.css"
 
@@ -10,6 +10,8 @@ import "../css/resume.css"
 //     }}>
 //     <Page className={["flexPage"]} width={document.querySelector('#root').clientWidth/1.45} height={document.querySelector('#root').clientHeight/1.45} pageNumber={1} />
 // </Document>
+
+// <a href={pdf_file} download>download as .pdf</a>
 
 export default class Resume extends Component {
     state = { numPages: null, pageNumber: 1 };
@@ -25,7 +27,10 @@ export default class Resume extends Component {
 
     render() {
         return (
-            <a href={pdf_file} download>download as .pdf</a>
+          <div className="mail-div">
+              <p>send an email for my resume</p>
+              <a href="mailto:mirkanbaba1@gmail.com&subject=Resume Request">Request Resume</a>
+          </div>
             )
         }
 }

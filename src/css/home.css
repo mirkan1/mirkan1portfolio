@@ -30,8 +30,10 @@ td {
 }
 
 .page {
+    min-height: 50vh!important;
     display: flex!important;
     justify-content: center!important;
+    align-items: center!important;
 }
 
 .jumbo-home {
