@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/mirkan1portfolio/static/css/main.bedf08d3.css",
-    "main.js": "/mirkan1portfolio/static/js/main.af26ebdc.js",
+    "main.css": "/mirkan1portfolio/static/css/main.c9dc9c68.css",
+    "main.js": "/mirkan1portfolio/static/js/main.159aef7e.js",
     "static/media/fa-duotone-900.eot": "/mirkan1portfolio/static/media/fa-duotone-900.67a989af1b23699174d6.eot",
-    "static/media/Renas_Kilic_Resume_2023.pdf": "/mirkan1portfolio/static/media/Renas_Kilic_Resume_2023.dc37699a51966f15580a.pdf",
     "static/media/fa-light-300.eot": "/mirkan1portfolio/static/media/fa-light-300.bf4d02d2b9f1e3752386.eot",
     "static/media/fa-regular-400.eot": "/mirkan1portfolio/static/media/fa-regular-400.6e629a19381c910f72a6.eot",
     "static/media/fa-solid-900.eot": "/mirkan1portfolio/static/media/fa-solid-900.52e50a473ce5a810b96c.eot",
@@ -22,11 +21,11 @@
     "static/media/fa-brands-400.woff": "/mirkan1portfolio/static/media/fa-brands-400.e14a4437f10d1f06872d.woff",
     "static/media/fa-brands-400.woff2": "/mirkan1portfolio/static/media/fa-brands-400.e7433cdfdc3e9a36da4e.woff2",
     "index.html": "/mirkan1portfolio/index.html",
-    "main.bedf08d3.css.map": "/mirkan1portfolio/static/css/main.bedf08d3.css.map",
-    "main.af26ebdc.js.map": "/mirkan1portfolio/static/js/main.af26ebdc.js.map"
+    "main.c9dc9c68.css.map": "/mirkan1portfolio/static/css/main.c9dc9c68.css.map",
+    "main.159aef7e.js.map": "/mirkan1portfolio/static/js/main.159aef7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bedf08d3.css",
-    "static/js/main.af26ebdc.js"
+    "static/css/main.c9dc9c68.css",
+    "static/js/main.159aef7e.js"
   ]
 }
