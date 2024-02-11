@@ -104,6 +104,7 @@ const Styles = styled.div`
         border-radius: 50%;
         height: 80px;
         transition: 3s;
+        margin-bottom: 1rem;
 
         &:hover {
             transform: rotate(360deg);
@@ -181,6 +182,7 @@ const Styles = styled.div`
 
       .rnIcon {
         height: 55px;
+        margin-bottom: 1rem;
       }
     }
 
