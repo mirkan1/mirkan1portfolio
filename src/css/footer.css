@@ -1,0 +1,137 @@
+
+  .borderer {
+    font-family: "Ubuntu","Roboto";
+    border-top: 4px black solid;
+    background-color: #202020;
+  }
+
+  .footer {
+    color: #efefef;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    column-gap: 10rem;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .copyright-div {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    color: #efefef;
+
+    & > p {
+      padding-bottom: 20px;
+    }
+  }
+
+
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.625;
+  }
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .footer {
+      color: #efefef;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      -webkit-box-align: center;
+      column-gap: auto;
+      padding: 1rem 0px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .linkedin {
+      margin-left: inherit;
+    }
+
+    .footer-b {
+      flex-wrap: wrap;
+
+      & > * {
+        margin-top: 10px;
+        flex-basis: 30%;
+      }
+    }
+    .mail-me {
+      flex-wrap: wrap;
+
+      & > * {
+        margin-bottom: 10px;
+        flex-basis: 50%;
+      }
+
+    }
+
+
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .footer-b {
+    display: flex;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+
+      & > * {
+        width: 50%;
+      }
+
+      img {
+        filter: invert(100%);
+      }
+    }
+    .mail-me {
+      display: flex;
+      flex-direction: column;
+      column-gap: 5px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .footer-b {
+        padding: 12rem 25%;
+        & > * {
+          margin-top: 10px;
+          flex-basis: 50%;
+        }
+      }      
+      .mail-me {
+        padding: 0px 1rem;
+        & > * {
+          margin-bottom: 10px;
+          flex-basis: 50%;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .footer-b {
+        padding: 1rem 25%;
+        & > * {
+          margin-top: 10px;
+          flex-basis: 50%;
+        }
+      }      
+      .mail-me {
+        padding: 0px 1rem;
+        & > * {
+          margin-bottom: 10px;
+          flex-basis: 50%;
+        }
+      }
+    }

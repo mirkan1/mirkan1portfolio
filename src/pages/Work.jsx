@@ -1,91 +1,6 @@
 import React from 'react'
 import { Badge } from "react-bootstrap";
-/* eslint-disable no-useless-escape */
-import styled from 'styled-components';
-
-const Styles = styled.div`
-  .title {
-
-  }
-  .language {
-    font-size: 12px!important;
-    font-weight: bold!important;
-    text-align: end;
-  }
-  .info {
-
-  }
-  .badge-parent {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .badge-fix {
-    padding: 0.25em 0.4em;
-    font-weight: 900;
-    border-radius: 0.25rem;
-    font-size: auto;
-    line-height: 1;
-    text-align: auto;
-    white-space: auto;
-    vertical-align: auto;
-  }
-  .myBox {
-    background-color: rgba(32, 32, 32, .7);
-    position: relative;
-    //display: inline-block;
-    margin: 0 0 20px 0;
-    padding: 15px 2.5vw;
-    font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
-
-    & > * {
-      //text-shadow: 2px 2px #202020;
-    }
-
-    & > p {
-      font-size: 14px;
-      letter-spacing: 0.25px;
-    }
-
-    & > h3 {
-      font-weight: normal;
-      font-size: 30px;
-      letter-spacing: 0spx;
-      text-align: center;
-      text-decoration: underline;
-    }
-
-    & > h6 {
-      font-weight: normal;
-      font-size: 16px;
-      letter-spacing: 0.15px;
-    }
-
-    & > h4 {
-      color: #e5c30a;
-      font-weight: normal;
-      font-size: 12px;
-      letter-spacing: 0.4px;
-      text-align: auto;
-    }
-  }
-  .myBox--light {
-    border-style: solid;
-    border-width: 5px;
-    border-color: #202020;
-    border-image-slice: 2;
-    //border-image-width: 1;
-    //border-image-outset: 0;
-    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23cccccc' /></svg>");
-    //position: relative;
-    //background-color: transparent;
-  }
-  
-  .source-button {
-    color: rgb(32,32,32);
-    width: 100%;
-    text-align: center;
-  }
-`;
+import '../css/work.css';
 
 const projects = [  
   {
@@ -194,7 +109,7 @@ const pTagInner = (text1, text2, innerTag) => {
 const infoPatternEncode = (text) => {
     // class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)
     text = text.toString();
-    const regex = /[a-zA-Z\-\!\@\#\_]*\((.*?)\)/g;
+    const regex = /[a-zA-Z\-!@#_]*\((.*?)\)/g;
     const matches = text.match(regex);
     const queueArray = new Array([HTMLElement]);
     if (matches) {
@@ -213,27 +128,28 @@ const infoPatternEncode = (text) => {
 const workPattern = (props, index) => {
   const encodedInfo = props.info.map(i => infoPatternEncode(i));
   return (
-    <Styles>
-      <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
-      <div className="badge-parent">
-        <Badge className="badge-fix" variant="warning">{props.date}</Badge>
-      </div>
-        <h3 className="title" >{props.title}</h3>
-        <h4 className="language">{props.language}</h4>
-        <h5 className="info">{props.subInfo}</h5>
-        {encodedInfo}
-        <a 
-          className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
-          href={props.link} 
-          target="_blank" 
-          rel="noopener noreferrer">
-        Source Code</a> 
-      </div>
-    </Styles>
+    <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
+    <div className="badge-parent">
+      <Badge className="badge-fix" variant="warning">{props.date}</Badge>
+    </div>
+      <h3 className="title" >{props.title}</h3>
+      <h4 className="language">{props.language}</h4>
+      <h5 className="info">{props.subInfo}</h5>
+      {encodedInfo}
+      <a 
+        className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
+        href={props.link} 
+        target="_blank" 
+        rel="noopener noreferrer">
+      Source Code</a> 
+    </div>
   )
 } 
 
 export default function Work() {
-  const pattern = projects.map((p, index) => ( workPattern(p, index) ))
-  return pattern    
+  return (
+    <div className="page-inner">
+      {projects.map((p, index) => ( workPattern(p, index) ))}
+    </div>
+  );
 }

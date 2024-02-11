@@ -1,0 +1,89 @@
+
+.language {
+  font-size: 12px!important;
+  font-weight: bold!important;
+  text-align: end;
+}
+.badge-parent {
+  display: flex;
+  justify-content: flex-end;
+}
+.badge-fix {
+  padding: 0.25em 0.4em;
+  font-weight: 900;
+  border-radius: 0.25rem;
+  font-size: auto;
+  line-height: 1;
+  text-align: auto;
+  white-space: auto;
+  vertical-align: auto;
+}
+.myBox {
+  background-color: rgba(32, 32, 32, .7);
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 15px 2.5vw;
+  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
+
+  & > p {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+  }
+
+  & > h3 {
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0spx;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  & > h6 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+  }
+
+  & > h4 {
+    color: #e5c30a;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-align: auto;
+  }
+}
+
+.myBox--light {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #202020;
+  border-image-slice: 2;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23cccccc' /></svg>");
+}
+
+.source-button {
+  color: rgb(32,32,32);
+  width: 100%;
+  text-align: center;
+}
+  
+.footer-b {
+  padding: 1.4rem 0 0 0!important;
+}
+
+.tech-parent-column {
+  border: 2px solid #f5f4f4!important;
+  padding: 1rem!important;
+  width: fit-content!important;
+  border-radius: 20px!important;
+}
+
+.navbar {
+  z-index: 9!important;
+  margin-bottom: 1.2rem!important;
+  padding: 1rem!important;
+}
+
+.jumbotron {
+  border-radius: 0!important;
+}
