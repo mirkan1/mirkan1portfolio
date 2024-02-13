@@ -28,8 +28,8 @@ export default class Resume extends Component {
     render() {
         return (
           <div className="mail-div">
-              <p>send an email for my resume</p>
-              <a href="mailto:mirkanbaba1@gmail.com&subject=Resume Request">Request Resume</a>
+              <p className="mail-div-p" >Send me an email for my resume by clicking button</p>
+              <a className="mail-div-a"  href="mailto:mirkanbaba1@gmail.com&subject=Resume Request">Request Resume</a>
           </div>
             )
         }

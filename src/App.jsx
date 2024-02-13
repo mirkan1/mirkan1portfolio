@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
-import { CSSTransition } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group';
 import { Navbar } from './components/Navbar';
 import Footer from './components/Footer';
 import Privacy from './pages/Privacy';
@@ -20,46 +20,25 @@ class App extends Component {
         <Jumbo className="jumbo">
           <Container style={{ minHeight: "50vh"}}>
             <Route exact path="/resume" component={Resume} >
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
+                <TransitionGroup>
                   <div className="page">
                     <Resume />
                   </div>
-                </CSSTransition>
-              )}
+                </TransitionGroup>
             </Route>
             <Route exact path="/work" component={Work}>
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
+                <TransitionGroup>
                   <div className="page">
                     <Work />
                   </div>
-                </CSSTransition>
-              )}
+                </TransitionGroup>
             </Route>
             <Route exact path="/" component={About} >
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
+                <TransitionGroup>
                   <div className="page page-about">
                     <About />
                   </div>
-                </CSSTransition>
-              )}
+                </TransitionGroup>
             </Route>
             <Route path="/privacy" component={Privacy} />
           </Container>

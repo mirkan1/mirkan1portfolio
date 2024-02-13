@@ -1,6 +1,10 @@
 .page-inner {
     display: block!important;
     max-width: 50rem!important;
+    height: 60vh!important;
+    overflow-y: scroll;
+    border: 2px solid silver;
+    padding: 10px;
 }
 
 .jumbo {
