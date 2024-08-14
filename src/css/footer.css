@@ -94,6 +94,7 @@
 
       img {
         filter: invert(100%);
+        margin-right: 18px;
       }
     }
     .mail-me {
@@ -135,3 +136,4 @@
         }
       }
     }
+

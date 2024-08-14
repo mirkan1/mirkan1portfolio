@@ -11,9 +11,18 @@ export default function Footer() {
     <div className="borderer">
       <div className="copyright-div">
         <div className="footer-b">
-          <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer"><img src={githubLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;github</a>
-          <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer"><img src={twitterLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;twitter</a>
-          <a className="linkedin" href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} height="32" width="32" alt="media-link"></img>&nbsp;&nbsp;linkedin</a>
+            <a href="https://github.com/mirkan1" target="_blank" rel="noopener noreferrer">
+          <img src={githubLogo} height="32" width="32" alt="media-link"></img>
+              github
+            </a>
+          <a href="https://twitter.com/mirkanOFmirkan" target="_blank" rel="noopener noreferrer">
+          <img src={twitterLogo} height="32" width="32" alt="media-link"></img>
+            twitter
+          </a>
+          <a className="linkedin" href="https://linkedin.com/in/raqux/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinLogo} height="32" width="32" alt="media-link"></img>
+            linkedin
+          </a>
         </div>
       </div>
     </div>
