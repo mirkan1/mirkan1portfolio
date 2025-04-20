@@ -1,7 +1,8 @@
-// import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
 import React, { Component } from 'react';
 import "../css/resume.css"
 
+// deleted until further notice
+// import pdf_file from "../pdf/Renas_Kilic_Resume_2023.pdf";
 // once I used below to show my resume but the npm package is bugged now
 // <Document 
 //     file={pdf_file} 
@@ -10,7 +11,6 @@ import "../css/resume.css"
 //     }}>
 //     <Page className={["flexPage"]} width={document.querySelector('#root').clientWidth/1.45} height={document.querySelector('#root').clientHeight/1.45} pageNumber={1} />
 // </Document>
-
 // <a href={pdf_file} download>download as .pdf</a>
 
 export default class Resume extends Component {
