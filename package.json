@@ -4,7 +4,7 @@
   "homepage": "https://mirkan1.github.io/mirkan1portfolio",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@react-pdf/renderer": "^1.6.8",
