@@ -15,21 +15,18 @@ import "../css/resume.css"
 
 export default class Resume extends Component {
     state = { numPages: null, pageNumber: 1 };
-
     onDocumentLoadSuccess = ({ numPages }) => {
         this.setState({ numPages });
       };
-    
       goToPrevPage = () =>
         this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
       goToNextPage = () =>
         this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
-
     render() {
         return (
           <div className="mail-div">
-              <p className="mail-div-p" >Send me an email for my resume by clicking button</p>
-              <a className="mail-div-a"  href="mailto:mirkanbaba1@gmail.com&subject=Resume Request">Request Resume</a>
+              <p className="mail-div-p">Send me an email for my resume by clicking button</p>
+              <a className="mail-div-a" href="mailto:mirkanbaba1@gmail.com&subject=Resume Request">Request Resume</a>
           </div>
             )
         }
