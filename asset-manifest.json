@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mirkan1portfolio/static/css/main.43b5aa4d.css",
+    "main.css": "/mirkan1portfolio/static/css/main.c95245eb.css",
     "main.js": "/mirkan1portfolio/static/js/main.81750f03.js",
     "static/media/fa-duotone-900.eot": "/mirkan1portfolio/static/media/fa-duotone-900.67a989af1b23699174d6.eot",
     "static/media/fa-light-300.eot": "/mirkan1portfolio/static/media/fa-light-300.bf4d02d2b9f1e3752386.eot",
@@ -21,11 +21,11 @@
     "static/media/fa-brands-400.woff": "/mirkan1portfolio/static/media/fa-brands-400.e14a4437f10d1f06872d.woff",
     "static/media/fa-brands-400.woff2": "/mirkan1portfolio/static/media/fa-brands-400.e7433cdfdc3e9a36da4e.woff2",
     "index.html": "/mirkan1portfolio/index.html",
-    "main.43b5aa4d.css.map": "/mirkan1portfolio/static/css/main.43b5aa4d.css.map",
+    "main.c95245eb.css.map": "/mirkan1portfolio/static/css/main.c95245eb.css.map",
     "main.81750f03.js.map": "/mirkan1portfolio/static/js/main.81750f03.js.map"
   },
   "entrypoints": [
-    "static/css/main.43b5aa4d.css",
+    "static/css/main.c95245eb.css",
     "static/js/main.81750f03.js"
   ]
 }
