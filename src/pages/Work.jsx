@@ -158,8 +158,8 @@ const workPattern = (props, index) => {
 
 export default function Work() {
   return (
-    <div className="page-inner">
+    <>
       {projects.map((p, index) => ( workPattern(p, index) ))}
-    </div>
+    </>
   );
 }

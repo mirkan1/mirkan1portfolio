@@ -28,9 +28,7 @@ class App extends Component {
             </Route>
             <Route exact path="/work" component={Work}>
                 <TransitionGroup>
-                  <div className="page">
                     <Work />
-                  </div>
                 </TransitionGroup>
             </Route>
             <Route exact path="/" component={About} >
