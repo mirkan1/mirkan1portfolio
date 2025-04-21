@@ -126,6 +126,7 @@
         & > * {
           margin-top: 10px;
           flex-basis: 50%;
+          flex-grow: 100;
         }
       }      
       .mail-me {
