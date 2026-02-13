@@ -4,6 +4,14 @@ import '../css/work.css';
 
 const projects = [
   {
+    title: "Effortl3ssAI", 
+    subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.", 
+    language: "Javascript", 
+    link: "https://github.com/anii76/EthSingapore", 
+    info: ["I went to Singapore for a hackaton, endeup up building this project with a team of 5."],
+    date: "2026"
+  },
+  {
     title: "jotform-api", 
     subInfo: "Third-party Python API", 
     language: "Python", 
@@ -16,7 +24,7 @@ const projects = [
     subInfo: "AI-backed paint application", 
     language: "Python", 
     link: "https://github.com/mirkan1/SdPaint", 
-    info: ["I have been working on this project for a while, using Python and Stable Diffusion."],
+    info: ["I found this project on reddit, loved the idea and wanted to help for a while, using Python and Stable Diffusion."],
     date: "2024"
   },
   {
