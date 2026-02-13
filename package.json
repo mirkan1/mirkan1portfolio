@@ -35,7 +35,7 @@
     "gh-pages": "^5.0.0",
     "globals": "^16.0.0",
     "json-loader": "^0.5.7",
-    "webpack": "^5.76.0",
+    "webpack": "^5.105.2",
     "webpack-cli": "^5.0.0"
   },
   "scripts": {
