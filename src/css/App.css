@@ -28,10 +28,8 @@ html {
 .pixel-borders {
   position: relative;
   display: inline-block;
-  /* margin: 0 15px 15px 0; */
   padding: 15px 20px;
   background-color: #fff;
-  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
 }
 
 .pixel-borders--1 {
@@ -265,8 +263,6 @@ html {
   right: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset -4px -4px #d9b908;
-          box-shadow: inset -4px -4px #d9b908;
 }
 
 .pixel-box--warning:hover, .pixel-box--warning:focus {

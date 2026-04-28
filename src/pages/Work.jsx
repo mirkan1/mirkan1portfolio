@@ -24,15 +24,21 @@ const projects = [
     subInfo: "AI backed paint application",
     language: "Python",
     link: "https://github.com/mirkan1/SdPaint",
-    info: ["I found this project on Reddit, loved the idea, and contributed for a while. This app uses Python and Stable Diffusion."],
+    info: [
+      "I found this project on Reddit, loved the idea,",
+      "and contributed for a while. This app uses Python and Stable Diffusion."
+    ],
     date: "2024"
   },
   {
     title: "Datareporter",
     subInfo: "Data reporting app",
-    language: "Python, Node.js, React",
+    language: "Flask, React",
     link: "https://github.com/dataminelab/datareporter",
-    info: ["This project involves Python for data processing, Node.js for backend, and React for frontend. Docker was used for deployment."],
+    info: [
+      "This project involves Python for data processing,",
+      "Node.js for backend, and React for frontend. Docker was used for deployment."
+    ],
     date: "2023"
   },
   {

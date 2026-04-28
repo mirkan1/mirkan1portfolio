@@ -40,7 +40,10 @@ export default function About() {
 
   return (
     <div className="tech-parent-column">
-      <h1 className="tech-title">Familiar Technologies</h1>
+      <h1 className="tech-title">
+        <span className="tech-title-full">Familiar Technologies</span>
+        <span className="tech-title-compact">Tech.</span>
+      </h1>
       {technologyGroups.map((group) => (
         <TechnologyGroup key={group.label} label={group.label} items={group.items} />
       ))}

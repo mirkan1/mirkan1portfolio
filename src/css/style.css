@@ -1,8 +1,6 @@
 
 .language {
-  font-size: 12px!important;
-  font-weight: bold!important;
-  text-align: end;
+  font-size: 16px!important;
 }
 .badge-parent {
   display: flex;
@@ -23,7 +21,6 @@
   position: relative;
   margin: 0 0 20px 0;
   padding: 15px 2.5vw;
-  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
 
   & > p {
     font-size: 14px;
