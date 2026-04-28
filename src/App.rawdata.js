@@ -46,10 +46,6 @@ const Styles = styled.div`
     border: black;
     margin-top: -75px;
     background: url(${backgroundImage}) center top no-repeat fixed;
-    // border-bottom: 5px solid red;
-    // border-bottom-left-radius: 200px;
-    // border-bottom-right-radius: 200px;
-    // text-shadow: 0 0 3px #fff, 0 0 5px #fff;
     margin-bottom: 0;
     background-color: black;
     color: white;
@@ -61,11 +57,6 @@ const Styles = styled.div`
     animation-name: example;
     animation-duration: 4s;
   }
-  
-  // @keyframes example {
-  //   from {margin-left: 200px;}
-  //   to {margin-left: -1000px;}
-  // }
 
 `;
 

@@ -520,7 +520,7 @@ body {
   }
 
   .jumbo {
-    font-family: "Ubuntu", "Roboto";
+    font-family: var(--site-font-family);
     border: black;
     margin-top: -75px;
     background: url('../img/bg3jpg.jpg') center top no-repeat fixed;
