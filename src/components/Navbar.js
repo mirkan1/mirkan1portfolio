@@ -11,7 +11,7 @@ import About from '../pages/About';
 const routes = [
     //{ path: '/', name: 'Home', Component: Home },
     { path: '/', name: 'Home', Component: About },
-    { path: '/work', name: 'Previous#works', Component: Work },
+    { path: '/work', name: 'Projects', Component: Work },
     // { path: '/blog', name: 'Blog', Component: Blog },
     { path: '/resume', name: 'Resume', Component: Resume },
     //{ path: '*', name: "NoMatch", Component: NoMatch}
