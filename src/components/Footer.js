@@ -16,18 +16,10 @@ export default function Footer() {
             <img src={githubLogo} height="32" width="32" alt="media-link"></img>
             github
           </a>
-          {/* <a href="https://twitter.com/mirkanOFmirkan">
-            <img src={twitterLogo} height="32" width="32" alt="media-link"></img>
-            twitter
-          </a> */}
           <a className="linkedin" href="https://linkedin.com/in/raqux">
             <img src={linkedinLogo} height="32" width="32" alt="media-link"></img>
             linkedin
           </a>
-          {/* <a className="facebook" href="https://facebook.com/r.mirkan">
-            <img src={facebookLogo} height="32" width="32" alt="media-link"></img>
-            facebook
-          </a> */}
         </div>
       </div>
     </div>
