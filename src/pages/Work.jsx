@@ -51,7 +51,11 @@ const projects = [
     subInfo: "Web scraping tools",
     language: "Python",
     link: "https://github.com/defisherpa",
-    info: ["Created web scrapers and web apps using Flask and Django."],
+    info: [
+      "Built web scrapers and supporting web apps with Flask and Django during the crypto boom.",
+      "Focused on collecting fast-moving cryptocurrency data from multiple sources, cleaning it up, and making it usable through internal tools and dashboards.",
+      "The work centered on automation, monitoring market activity, and delivering timely data for research and decision-making."
+    ],
     date: "2021"
   },
   {
