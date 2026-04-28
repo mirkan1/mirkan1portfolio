@@ -4,42 +4,42 @@ import '../css/work.css';
 
 const projects = [
   {
-    title: "Effortl3ssAI", 
-    subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.", 
-    language: "Javascript", 
-    link: "https://github.com/anii76/EthSingapore", 
+    title: "Effortl3ssAI",
+    subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.",
+    language: "Javascript",
+    link: "https://github.com/anii76/EthSingapore",
     info: ["I went to Singapore for a hackaton, endeup up building this project with a team of 5."],
     date: "2026"
   },
   {
-    title: "jotform-api", 
-    subInfo: "Third-party Python API", 
-    language: "Python", 
-    link: "https://github.com/mirkan1/crossmark-jotform-api", 
+    title: "jotform-api",
+    subInfo: "Third-party Python API",
+    language: "Python",
+    link: "https://github.com/mirkan1/crossmark-jotform-api",
     info: ["This project is a third-party API for Jotform, built using Python."],
     date: "2025"
   },
   {
-    title: "Stable Diffusion Paint", 
-    subInfo: "AI-backed paint application", 
-    language: "Python", 
-    link: "https://github.com/mirkan1/SdPaint", 
+    title: "Stable Diffusion Paint",
+    subInfo: "AI-backed paint application",
+    language: "Python",
+    link: "https://github.com/mirkan1/SdPaint",
     info: ["I found this project on reddit, loved the idea and wanted to help for a while, using Python and Stable Diffusion."],
     date: "2024"
   },
   {
-    title: "Datareporter", 
-    subInfo: "Data reporting app", 
-    language: "Python, Node.js, React", 
-    link: "https://github.com/dataminelab/datareporter", 
+    title: "Datareporter",
+    subInfo: "Data reporting app",
+    language: "Python, Node.js, React",
+    link: "https://github.com/dataminelab/datareporter",
     info: ["This project involves Python for data processing, Node.js for backend, and React for frontend. Docker was used for deployment."],
     date: "2023"
   },
   {
-    title: "Jotform API React Web Integration", 
-    subInfo: "Websites with caching and MongoDB", 
-    language: "HTML, CSS, JS", 
-    link: "https://github.com/mirkan1/kcchatter", 
+    title: "Jotform API React Web Integration",
+    subInfo: "Websites with caching and MongoDB",
+    language: "HTML, CSS, JS",
+    link: "https://github.com/mirkan1/kcchatter",
     info: [
       "Started with Flask and HTML, later transitioned to TypeScript and React for better efficiency.",
       "Classification[class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)] helps developers navigate paths easily."
@@ -47,34 +47,34 @@ const projects = [
     date: "2022"
   },
   {
-    title: "Defisherpa", 
-    subInfo: "Web scraping tools", 
-    language: "Python", 
-    link: "https://github.com/defisherpa", 
+    title: "Defisherpa",
+    subInfo: "Web scraping tools",
+    language: "Python",
+    link: "https://github.com/defisherpa",
     info: ["Created web scrapers and web apps using Flask and Django."],
     date: "2021"
   },
   {
-    title: "This Website", 
-    subInfo: "Portfolio website", 
-    link: "https://github.com/mirkan1/mirkan1portfolio", 
-    language: "JavaScript (React)", 
+    title: "This Website",
+    subInfo: "Portfolio website",
+    link: "https://github.com/mirkan1/mirkan1portfolio",
+    language: "JavaScript (React)",
     info: ["A personal website showcasing projects and career aspirations in software engineering."],
     date: "2019"
   },
   {
-    title: "xhrchat", 
-    subInfo: "Chat application using XHR requests", 
-    link: "https://github.com/mirkan1/xhrchat", 
-    language: "JavaScript (Express, Node, MongoDB)", 
+    title: "xhrchat",
+    subInfo: "Chat application using XHR requests",
+    link: "https://github.com/mirkan1/xhrchat",
+    language: "JavaScript (Express, Node, MongoDB)",
     info: ["A chat program using AJAX with long polling for efficient communication."],
     date: "2019"
   },
   {
-    title: "Shooting Game", 
-    subInfo: "Mobile arcade game", 
-    link: "https://github.com/mirkan1/someTrexGame", 
-    language: "JavaScript (React Native)", 
+    title: "Shooting Game",
+    subInfo: "Mobile arcade game",
+    link: "https://github.com/mirkan1/someTrexGame",
+    language: "JavaScript (React Native)",
     info: [
       "A mobile game where players shoot targets with bouncing balls.",
       "Inspired by arcade games and plans to integrate pixel art in future versions."
@@ -82,18 +82,18 @@ const projects = [
     date: "2018"
   },
   {
-    title: "Elif's Ox", 
-    subInfo: "Etymological search engine and forum", 
-    link: "https://github.com/lyk2018-python/elifin-okuzu", 
-    language: "Python (Django)", 
+    title: "Elif's Ox",
+    subInfo: "Etymological search engine and forum",
+    link: "https://github.com/lyk2018-python/elifin-okuzu",
+    language: "Python (Django)",
     info: ["Collaborative project created during a summer camp in Turkey."],
     date: "2018"
   },
   {
-    title: "BTC Bot", 
-    subInfo: "Telegram bot for Bitcoin alerts", 
-    language: "Python (Requests)", 
-    link: "https://github.com/mirkan1/Telegram_spam", 
+    title: "BTC Bot",
+    subInfo: "Telegram bot for Bitcoin alerts",
+    language: "Python (Requests)",
+    link: "https://github.com/mirkan1/Telegram_spam",
     info: ["A bot providing cryptocurrency updates and price alerts."],
     date: "2017"
   }
@@ -141,33 +141,39 @@ const infoPatternEncode = (text) => {
   return queueArray.map(elem => elem);
 };
 
-const workPattern = (props, index) => {
+const workPattern = (props) => {
   const encodedInfo = props.info.map(i => infoPatternEncode(i));
   return (
-    <div className="myBox myBox--light" style={{fontFamily: "Ubuntu"}} key={index}>
-    <div className="badge-parent">
-      <Badge className="badge-fix" variant="warning">{props.date}</Badge>
-    </div>
+    <div className="myBox myBox--light" style={{ fontFamily: "Ubuntu" }}>
+      <div className="badge-parent">
+        <Badge className="badge-fix" variant="warning">{props.date}</Badge>
+      </div>
       <h3 className="title" >{props.title}</h3>
-      <h4 className="language">{props.language}</h4>
-      <h5 className="info">{props.subInfo}</h5>
-      {encodedInfo.map((elem, idx) => (
-        <React.Fragment key={`encodedInfo-${idx}`}>{elem}</React.Fragment>
-      ))}
-      <a 
-        className="source-button pixel-borders pixel-box--warning hvr-underline-from-left" 
-        href={props.link} 
-        target="_blank" 
+      <div className="work-card-content">
+        <h4 className="language">{props.language}</h4>
+        <h5 className="info">{props.subInfo}</h5>
+        {encodedInfo.map((elem, idx) => (
+          <React.Fragment key={`encodedInfo-${idx}`}>{elem}</React.Fragment>
+        ))}
+      </div>
+      <a
+        className="source-button pixel-borders pixel-box--warning hvr-underline-from-left"
+        href={props.link}
+        target="_blank"
         rel="noopener noreferrer">
-      Source Code</a> 
+        Source Code</a>
     </div>
   )
-} 
+}
 
 export default function Work() {
   return (
-    <>
-      {projects.map((p, index) => ( workPattern(p, index) ))}
-    </>
+    <div className="work-grid">
+      {projects.map((p, index) => (
+        <div className="work-grid-item" key={`work-grid-item-${index}`}>
+          {workPattern(p)}
+        </div>
+      ))}
+    </div>
   );
 }

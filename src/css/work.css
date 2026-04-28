@@ -16,3 +16,51 @@
 .container {
     max-width: 80vw;
 }
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.work-grid-item {
+    flex: 0 0 100%;
+}
+
+.work-grid-item .myBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 12px 1rem;
+    height: 100%;
+}
+
+.work-grid-item .title {
+    margin-bottom: 0.5rem;
+}
+
+.work-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-grid-item .source-button {
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    .work-grid-item {
+        flex: 0 0 calc((100% - 1rem) / 2);
+        max-width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media (min-width: 1024px) {
+    .work-grid-item {
+        flex: 0 0 calc((100% - 2rem) / 3);
+        max-width: calc((100% - 2rem) / 3);
+    }
+}
