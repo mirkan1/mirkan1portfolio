@@ -20,11 +20,11 @@ const projects = [
     date: "2025"
   },
   {
-    title: "Stable Diffusion Paint",
-    subInfo: "AI-backed paint application",
+    title: "Paint App",
+    subInfo: "AI backed paint application",
     language: "Python",
     link: "https://github.com/mirkan1/SdPaint",
-    info: ["I found this project on reddit, loved the idea and wanted to help for a while, using Python and Stable Diffusion."],
+    info: ["I found this project on Reddit, loved the idea, and contributed for a while. This app uses Python and Stable Diffusion."],
     date: "2024"
   },
   {
@@ -137,7 +137,7 @@ const infoPatternEncode = (text) => {
 const workPattern = (props) => {
   const encodedInfo = props.info.map(i => infoPatternEncode(i));
   return (
-    <div className="myBox myBox--light" style={{ fontFamily: "Ubuntu" }}>
+    <div className="myBox myBox--light">
       <div className="badge-parent">
         <Badge className="badge-fix" variant="warning">{props.date}</Badge>
       </div>

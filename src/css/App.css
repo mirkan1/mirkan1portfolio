@@ -1,21 +1,6 @@
-@font-face {
-  font-family: 'Ubuntu';
-  src: local('Ubuntu'), url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('woff2'), 
-    url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('woff'), 
-    url(../fonts/ubuntu-font-family-0.80/Ubuntu-R.ttf) format('truetype');
-
-  /* font-family: 'Press Start 2P';
-  src: local('Press Start 2P'), url(./fonts/PressStart2P-Regular.ttf) format('woff2'), 
-    url(./fonts/PressStart2P-Regular.ttf) format('woff'), 
-    url(./fonts/PressStart2P-Regular.ttf) format('truetype'); */
-    
-  /* font-weight: 300; */
-  font-style: normal;
+html {
+  font-family: var(--site-font-family);
 }
-
-/* html {
-  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
-} */
 
 /*
  *  STYLE 4
@@ -520,7 +505,6 @@ body {
   }
 
   .jumbo {
-    font-family: var(--site-font-family);
     border: black;
     margin-top: -75px;
     background: url('../img/bg3jpg.jpg') center top no-repeat fixed;

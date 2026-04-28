@@ -5,7 +5,6 @@ import MailForm from './MailForm';
 
 const Styles = styled.div`
   #access-info {
-    font-family: "Ubuntu", "Roboto";
     background-color: rgba(32, 32, 32, .7);
     height: 400px;
     width: 100%;
