@@ -1,55 +1,49 @@
 import React from 'react'
 import "../css/home.css"
 
-const ListTable = ({ items }) => {
+const TechnologyGroup = ({ label, items }) => {
   return (
-    <table>
-      <tbody>
+    <section className="tech-group-card pixel-borders pixel-box--warning" aria-label={label}>
+      <h2 className="tech-group-label">{label}</h2>
+      <div className="tech-chip-list">
         {items.map((item) => (
-          <tr key={item.text}>
-            <td><i className="emoji-icon">{item.icon}</i></td>
-            <td>{item.text}</td>
-          </tr>
+          <span key={item} className="tech-chip pixel-borders pixel-box--warning">{item}</span>
         ))}
-      </tbody>
-    </table>
+      </div>
+    </section>
   );
 };
 
 export default function About() {
-  const listItems = [
-    { icon: '🐍', text: 'Python' },
-    { icon: '🐼', text: 'Pandas(python)' },
-    { icon: '🍾', text: 'Flask(python)' },
-    { icon: '🥾', text: 'Django(python)' },
-    { icon: '👔', text: 'TypeScript' },
-    { icon: '⚛', text: 'React' },
-    { icon: '📱', text: 'React-native' },
-    { icon: '🍜', text: 'Node.js' },
-    { icon: '🎨', text: 'HTML/CSS/JS' },
-    { icon: '🖥', text: 'AWS' }
-  ];
-  const listItems2 = [
-    { icon: '🈁', text: 'Heroku' },
-    { icon: '💾', text: 'MySQL' },
-    { icon: '📊', text: 'GraphQL' },
-    { icon: '🍃', text: 'MongoDB' },
-    { icon: '🦄', text: 'Gunicorn' },
-    { icon: '🚂', text: 'Nginx' },
-    { icon: '🐜', text: 'Kafka' },
-    { icon: '🎩', text: 'Jenkins' },
-    { icon: '🐳', text: 'Docker' },
-    { icon: '🕸', text: 'Git' },
-    { icon: '💎', text: 'Solidity' },
+  const technologyGroups = [
+    {
+      label: 'Computer Languages',
+      items: ['Python', 'TypeScript', 'Solidity', 'Go']
+    },
+    {
+      label: 'Front-End',
+      items: ['React', 'React Native', 'Bootstrap', 'Material-UI', 'D3.js', 'Tailwind CSS']
+    },
+    {
+      label: 'Back-End',
+      items: ['Flask', 'Django', 'Node.js', 'Nginx']
+    },
+    {
+      label: 'Data & Messaging',
+      items: ['Pandas', 'MySQL', 'MongoDB', 'Redis', 'PostgreSQL']
+    },
+    {
+      label: 'Cloud & DevOps',
+      items: ['AWS', 'Heroku', 'Docker', 'Git', 'Azure']
+    }
   ];
 
   return (
     <div className="tech-parent-column">
-      <h1>Familiar Technologies</h1>
-      <div className="tech-parent-row">
-        <ListTable items={listItems} />
-        <ListTable items={listItems2} />
-      </div>
+      <h1 className="tech-title">Familiar Technologies</h1>
+      {technologyGroups.map((group) => (
+        <TechnologyGroup key={group.label} label={group.label} items={group.items} />
+      ))}
     </div>
   )
 }

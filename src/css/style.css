@@ -71,17 +71,11 @@
   padding: 1.4rem 0 0 0!important;
 }
 
-.tech-parent-column {
-  border: 2px solid #f5f4f4!important;
-  padding: 1rem!important;
-  width: fit-content!important;
-  border-radius: 20px!important;
-}
+
 
 .navbar {
   z-index: 9!important;
   margin-bottom: 1.2rem!important;
-  padding: 1rem!important;
 }
 
 .jumbotron {

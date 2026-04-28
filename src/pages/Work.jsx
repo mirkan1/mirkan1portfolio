@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Effortl3ssAI",
     subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.",
-    language: "Javascript",
+    language: "Javascript, Solidity",
     link: "https://github.com/anii76/EthSingapore",
     info: ["I went to Singapore for a hackaton, endeup up building this project with a team of 5."],
     date: "2026"
@@ -15,7 +15,7 @@ const projects = [
     title: "jotform-api",
     subInfo: "Third-party Python API",
     language: "Python",
-    link: "https://github.com/mirkan1/crossmark-jotform-api",
+    link: "https://pypi.org/project/crossmark-jotform-api",
     info: ["This project is a third-party API for Jotform, built using Python."],
     date: "2025"
   },
@@ -34,17 +34,6 @@ const projects = [
     link: "https://github.com/dataminelab/datareporter",
     info: ["This project involves Python for data processing, Node.js for backend, and React for frontend. Docker was used for deployment."],
     date: "2023"
-  },
-  {
-    title: "Jotform API React Web Integration",
-    subInfo: "Websites with caching and MongoDB",
-    language: "HTML, CSS, JS",
-    link: "https://github.com/mirkan1/kcchatter",
-    info: [
-      "Started with Flask and HTML, later transitioned to TypeScript and React for better efficiency.",
-      "Classification[class-types(https://www.typescriptlang.org/docs/handbook/2/classes.html)] helps developers navigate paths easily."
-    ],
-    date: "2022"
   },
   {
     title: "Defisherpa",
@@ -155,10 +144,12 @@ const workPattern = (props) => {
       <h3 className="title" >{props.title}</h3>
       <div className="work-card-content">
         <h4 className="language">{props.language}</h4>
-        <h5 className="info">{props.subInfo}</h5>
-        {encodedInfo.map((elem, idx) => (
-          <React.Fragment key={`encodedInfo-${idx}`}>{elem}</React.Fragment>
-        ))}
+        <div className="work-description-panel">
+          <h5 className="info">{props.subInfo}</h5>
+          {encodedInfo.map((elem, idx) => (
+            <React.Fragment key={`encodedInfo-${idx}`}>{elem}</React.Fragment>
+          ))}
+        </div>
       </div>
       <a
         className="source-button pixel-borders pixel-box--warning hvr-underline-from-left"

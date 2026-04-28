@@ -9,29 +9,29 @@ import Resume from '../pages/Resume';
 import About from '../pages/About';
 
 const routes = [
-    //{ path: '/', name: 'Home', Component: Home },
-    { path: '/', name: 'Home', Component: About },
-    { path: '/work', name: 'Projects', Component: Work },
-    // { path: '/blog', name: 'Blog', Component: Blog },
-    { path: '/resume', name: 'Resume', Component: Resume },
-    //{ path: '*', name: "NoMatch", Component: NoMatch}
+  //{ path: '/', name: 'Home', Component: Home },
+  { path: '/', name: 'Home', Component: About },
+  { path: '/work', name: 'Projects', Component: Work },
+  // { path: '/blog', name: 'Blog', Component: Blog },
+  { path: '/resume', name: 'Resume', Component: Resume },
+  //{ path: '*', name: "NoMatch", Component: NoMatch}
 ]
 
 
 function Navbar() {
-  
+
   const [size, sizeChange] = useState(false);
-  
+
   function infoButton() {
     let ele = document.getElementsByClassName('navbar')[0];
-    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];    
+    let navbarCollapse = document.getElementsByClassName('navbar-collapse')[0];
     if (!size) {
-      ele.style["max-height"] = "300px";
+      ele.style["max-height"] = "240px";
       navbarCollapse.style["display"] = "block";
       //navbarCollapse.style["position"] = "fixed";
-      setTimeout(function(){ 
-        navbarCollapse.style["margin-left"] = "60%"; 
-        setTimeout(function(){
+      setTimeout(function () {
+        navbarCollapse.style["margin-left"] = "60%";
+        setTimeout(function () {
           navbarCollapse.style["flex-direction"] = "column";
           navbarCollapse.style["align-items"] = "end";
           navbarCollapse.style.removeProperty("margin-left");
@@ -39,27 +39,27 @@ function Navbar() {
         }, 375);
       }, 300);
     } else {
-      setTimeout(function(){
+      setTimeout(function () {
         navbarCollapse.style["display"] = "none";
         navbarCollapse.style.removeProperty("flex-direction");
         navbarCollapse.style.removeProperty("align-items");
       }, 300);
-      ele.style["max-height"] = "125px";
+      ele.style["max-height"] = "96px";
     }
     sizeChange(!size)
   }
-  
+
   return (
     <Styles>
-        <NavigationBar expand="md" className="navbar">
-          <NavigationBar.Brand href="/">
-            <img alt="react icon" className="rnIcon" src={rIcon}></img>
-          </NavigationBar.Brand>
+      <NavigationBar expand="md" className="navbar">
+        <NavigationBar.Brand href="/">
+          <img alt="react icon" className="rnIcon" src={rIcon}></img>
+        </NavigationBar.Brand>
 
-          <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()}/>
-          <NavigationBar.Collapse id="basic-navbar-nav" className="justify-content-end">
-            {routes.map(route => (
-              <Nav.Item key={route.path} >
+        <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()} />
+        <NavigationBar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          {routes.map(route => (
+            <Nav.Item key={route.path} >
               <Nav.Link
                 as={NavLink}
                 to={route.path}
@@ -69,32 +69,32 @@ function Navbar() {
               >
                 {route.name}
               </Nav.Link>
-              </Nav.Item>
-            ))}
-          </NavigationBar.Collapse>
-        </NavigationBar>
-      </Styles>
-    )
-  }
+            </Nav.Item>
+          ))}
+        </NavigationBar.Collapse>
+      </NavigationBar>
+    </Styles>
+  )
+}
 
-  
-  
+
+
 const Styles = styled.div`
     .nav-link {
       color: #cbad09;
     }
     .navbar {
-        font-family: "Ubuntu","Roboto", Arial, sans-serif;
+        font-family: var(--site-font-family);
         background-color: #202020;
         color: #E6E6E6;
-        max-height: 125px;
+        max-height: 96px;
         max-width: 100vw;
         positiion: relative;
         display: flex;
         flex-direction: row;
         border-top: 4px black solid;
         border-bottom: 4px black solid;
-        margin-bottom: 50px;
+        margin-bottom: 36px;
         transition: 0.3s ease-out;
         align-items: baseline;
     }
@@ -102,9 +102,9 @@ const Styles = styled.div`
     .rnIcon {
         border: 2px solid #E6E6E6;
         border-radius: 50%;
-        height: 80px;
+      height: 60px;
         transition: 3s;
-        margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
 
         &:hover {
             transform: rotate(360deg);
@@ -181,8 +181,8 @@ const Styles = styled.div`
       }
 
       .rnIcon {
-        height: 55px;
-        margin-bottom: 1rem;
+        height: 48px;
+        margin-bottom: 0.5rem;
       }
     }
 
@@ -192,4 +192,4 @@ const Styles = styled.div`
     }
 
 `;
-  export { Navbar, routes };
+export { Navbar, routes };

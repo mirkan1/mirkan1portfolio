@@ -28,14 +28,12 @@ class App extends Component {
             </Route>
             <Route exact path="/work" component={Work}>
                 <TransitionGroup>
-                    <Work />
+                  <Work />
                 </TransitionGroup>
             </Route>
             <Route exact path="/" component={About} >
                 <TransitionGroup>
-                  <div className="page page-about">
-                    <About />
-                  </div>
+                  <About />
                 </TransitionGroup>
             </Route>
             <Route path="/privacy" component={Privacy} />

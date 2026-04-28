@@ -25,15 +25,17 @@
 }
 
 .work-grid-item {
+    display: flex;
     flex: 0 0 100%;
 }
 
 .work-grid-item .myBox {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 12px 1rem;
-    height: 100%;
+    height: 28rem;
 }
 
 .work-grid-item .title {
@@ -44,11 +46,66 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: 0;
+}
+
+.work-description-panel {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #a88f06;
+    border-image-slice: 2;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
+    background: #f4e49b;
+    color: #202020;
+    padding: 0.5rem;
+    scrollbar-width: thin;
+    margin-bottom: 0.5rem;
+}
+
+@supports (border-image-source: none) {
+    .work-description-panel {
+        border-radius: 8px;
+    }
+}
+
+.work-description-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    box-shadow: inset -2px -2px #d9b908;
+    pointer-events: none;
+}
+
+.work-description-panel > * {
+    position: relative;
+    z-index: 1;
+}
+
+.work-description-panel p,
+.work-description-panel .info {
+    margin-bottom: 0.5rem;
+}
+
+.work-description-panel .info {
+    margin-top: 0;
 }
 
 .work-grid-item .source-button {
     margin-top: auto;
+}
+
+@media (max-width: 767px) {
+    .work-grid-item .myBox {
+        height: 24rem;
+    }
 }
 
 @media (min-width: 768px) {
