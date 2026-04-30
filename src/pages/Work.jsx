@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Effortl3ssAI",
     subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.",
-    language: "Javascript, Solidity",
+    language: "Typescript, Solidity",
     link: "https://github.com/anii76/EthSingapore",
     info: ["I went to Singapore for a hackaton, endeup up building this project with a team of 5."],
     date: "2026"
@@ -22,11 +22,11 @@ const projects = [
   {
     title: "Paint App",
     subInfo: "AI backed paint application",
-    language: "Python",
+    language: "Stable Diffusion, Python",
     link: "https://github.com/mirkan1/SdPaint",
     info: [
       "I found this project on Reddit, loved the idea,",
-      "and contributed for a while. This app uses Python and Stable Diffusion."
+      "and contributed for a while. This app uses."
     ],
     date: "2024"
   },
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "Defisherpa",
     subInfo: "Web scraping tools",
-    language: "Python",
+    language: "Python, Scrappy",
     link: "https://github.com/defisherpa",
     info: [
       "Built web scrapers and supporting web apps with Flask and Django during the crypto boom.",
@@ -57,7 +57,7 @@ const projects = [
     title: "This Website",
     subInfo: "Portfolio website",
     link: "https://github.com/mirkan1/mirkan1portfolio",
-    language: "JavaScript (React)",
+    language: "React",
     info: ["A personal website showcasing projects and career aspirations in software engineering."],
     date: "2019"
   },
@@ -65,7 +65,7 @@ const projects = [
     title: "xhrchat",
     subInfo: "Chat application using XHR requests",
     link: "https://github.com/mirkan1/xhrchat",
-    language: "JavaScript (Express, Node, MongoDB)",
+    language: "Express.js, Node.js, MongoDB",
     info: ["A chat program using AJAX with long polling for efficient communication."],
     date: "2019"
   },
@@ -73,7 +73,7 @@ const projects = [
     title: "Shooting Game",
     subInfo: "Mobile arcade game",
     link: "https://github.com/mirkan1/someTrexGame",
-    language: "JavaScript (React Native)",
+    language: "React Native",
     info: [
       "A mobile game where players shoot targets with bouncing balls.",
       "Inspired by arcade games and plans to integrate pixel art in future versions."
@@ -84,14 +84,14 @@ const projects = [
     title: "Elif's Ox",
     subInfo: "Etymological search engine and forum",
     link: "https://github.com/lyk2018-python/elifin-okuzu",
-    language: "Python (Django)",
+    language: "Django, HTML, CSS",
     info: ["Collaborative project created during a summer camp in Turkey."],
     date: "2018"
   },
   {
     title: "BTC Bot",
     subInfo: "Telegram bot for Bitcoin alerts",
-    language: "Python (Requests)",
+    language: "Python, Telegram API",
     link: "https://github.com/mirkan1/Telegram_spam",
     info: ["A bot providing cryptocurrency updates and price alerts."],
     date: "2017"
