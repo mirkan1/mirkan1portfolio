@@ -8,41 +8,47 @@ import Privacy from './pages/Privacy';
 import Resume from './pages/Resume';
 import Work from './pages/Work';
 import About from './pages/About';
+import Certifications from './pages/Certifications';
 import './css/style.css';
 import './css/App.css';
 import './css/hover-min.css';
 
-class App extends Component {  
+class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar/>
+        <Navbar />
         <Jumbo className="jumbo">
-          <Container style={{ minHeight: "50vh"}}>
+          <Container style={{ minHeight: "50vh" }}>
             <Route exact path="/resume" component={Resume} >
-                <TransitionGroup>
-                  <div className="page">
-                    <Resume />
-                  </div>
-                </TransitionGroup>
+              <TransitionGroup>
+                <div className="page">
+                  <Resume />
+                </div>
+              </TransitionGroup>
             </Route>
             <Route exact path="/work" component={Work}>
-                <TransitionGroup>
-                  <Work />
-                </TransitionGroup>
+              <TransitionGroup>
+                <Work />
+              </TransitionGroup>
+            </Route>
+            <Route exact path="/certifications" component={Certifications}>
+              <TransitionGroup>
+                <Certifications />
+              </TransitionGroup>
             </Route>
             <Route exact path="/" component={About} >
-                <TransitionGroup>
-                  <About />
-                </TransitionGroup>
+              <TransitionGroup>
+                <About />
+              </TransitionGroup>
             </Route>
             <Route path="/privacy" component={Privacy} />
           </Container>
         </Jumbo>
-      <Footer />
+        <Footer />
       </Router>
-  )
-}
+    )
+  }
 }
 
 export default App;

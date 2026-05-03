@@ -1,0 +1,56 @@
+.certifications-page {
+    width: 100%;
+    padding: 1.25rem;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #a88f06;
+    border-image-slice: 2;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
+    background: #f4e49b;
+    color: #202020;
+}
+
+.certifications-title {
+    margin: 0 0 1rem;
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.certification-list {
+    margin: 0;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.certification-item {
+    background: #fff8d2;
+    border: 2px solid #202020;
+    padding: 0.75rem;
+}
+
+.certification-name {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+}
+
+.certification-meta {
+    margin: 0 0 0.45rem;
+}
+
+.certification-link {
+    color: #202020;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .certifications-page {
+        padding: 1rem;
+    }
+
+    .certification-name {
+        font-size: 1rem;
+    }
+}
