@@ -5,7 +5,6 @@ import { TransitionGroup } from 'react-transition-group';
 import { Navbar } from './components/Navbar';
 import Footer from './components/Footer';
 import Privacy from './pages/Privacy';
-import Resume from './pages/Resume';
 import Work from './pages/Work';
 import About from './pages/About';
 import Certifications from './pages/Certifications';
@@ -20,13 +19,6 @@ class App extends Component {
         <Navbar />
         <Jumbo className="jumbo">
           <Container style={{ minHeight: "50vh" }}>
-            <Route exact path="/resume" component={Resume} >
-              <TransitionGroup>
-                <div className="page">
-                  <Resume />
-                </div>
-              </TransitionGroup>
-            </Route>
             <Route exact path="/work" component={Work}>
               <TransitionGroup>
                 <Work />

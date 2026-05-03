@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
 // import Blog from '../pages/Blog';
 import Work from '../pages/Work';
-import Resume from '../pages/Resume';
 import About from '../pages/About';
 import Certifications from '../pages/Certifications';
 
@@ -15,7 +14,6 @@ const routes = [
   { path: '/work', name: 'Projects', Component: Work },
   // { path: '/blog', name: 'Blog', Component: Blog },
   { path: '/certifications', name: 'Certifications', Component: Certifications },
-  { path: '/resume', name: 'Resume', Component: Resume },
   //{ path: '*', name: "NoMatch", Component: NoMatch}
 ]
 
