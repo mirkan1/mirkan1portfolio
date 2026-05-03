@@ -46,16 +46,16 @@ export default function About() {
 
   return (
     <>
-    <div className="tech-parent-column">
-      <h1 className="tech-title">
-        <span className="tech-title-full">Familiar Technologies</span>
-        <span className="tech-title-compact">Tech.</span>
-      </h1>
-      {technologyGroups.map((group) => (
-        <TechnologyGroup key={group.label} label={group.label} items={group.items} />
-      ))}
-    </div>
-    
+      <div className="tech-parent-column">
+        <h1 className="tech-title">
+          <span className="tech-title-full">Familiar Technologies</span>
+          <span className="tech-title-compact">Tech.</span>
+        </h1>
+        {technologyGroups.map((group) => (
+          <TechnologyGroup key={group.label} label={group.label} items={group.items} />
+        ))}
+      </div>
+
       <section className="resume-inline-card pixel-borders pixel-box--warning" aria-label="Resume request">
         <p className="resume-inline-text">Send me an email for my resume by clicking the button.</p>
         <a
