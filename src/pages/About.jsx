@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import "../css/home.css"
 
 const TechnologyGroup = ({ label, items }) => {
@@ -12,6 +13,11 @@ const TechnologyGroup = ({ label, items }) => {
       </div>
     </section>
   );
+};
+
+TechnologyGroup.propTypes = {
+  label: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default function About() {
