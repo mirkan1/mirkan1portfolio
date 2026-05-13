@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+  - directory: "/"
+    target-branch: "master"
+    package-ecosystem: "npm"
+    commit-message:
+      prefix: "[NEW VERSION AVAILABLE]: "
+    schedule:
+      interval: "weekly"
+      day: "saturday"
