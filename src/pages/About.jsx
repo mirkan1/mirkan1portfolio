@@ -4,7 +4,7 @@ import "../css/about.css"
 
 const TechnologyGroup = ({ label, items }) => {
   return (
-    <section className="tech-group-card pixel-borders pixel-box--warning" aria-label={label}>
+    <section className="tech-group-card pixel-borders pixel-box--warning resume-box--warning" aria-label={label}>
       <h2 className="tech-group-label">{label}</h2>
       <div className="tech-chip-list">
         {items.map((item) => (
