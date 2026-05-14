@@ -98,50 +98,51 @@ const projects = [
   }
 ];
 
-const aTag = (link, text) => {
-  return (
-    <a href={link} target="_blank" rel="noreferrer" className="hvr-underline-from-left">{text}</a>
-  )
-}
-
-const pTag = (text) => {
-  return (
-    <p>{text}</p>
-  )
-}
-
-const pTagInner = (text1, text2, innerTag) => {
-  return (
-    <p>{text1}{innerTag}{text2}</p>
-  )
-}
-
-const infoPatternEncode = (text) => {
-  if (!text) return null;
-  if (typeof text === "string") {
-    text = text.replace(/(\r\n|\n|\r)/gm, "");
-  } else {
-    text = text.toString();
+const infoPatternEncode = (text, key) => {
+  if (!text) {
+    return null;
   }
-  const regex = /[a-zA-Z\-!@#_]*\((.*?)\)/g;
-  const matches = text.match(regex);
-  const queueArray = new Array([HTMLElement]);
-  if (matches) {
-    matches.forEach(match => {
-      const link = match.split("(")[1].split(")")[0];
-      const linkText = match.split("(")[0];
-      const remaining = text.split(match)[1];
-      const before = text.split(match)[0];
-      queueArray.push(pTagInner(before, remaining, aTag(link, linkText)))
-    });
-  } else {
-    queueArray.push(pTag(text))
+
+  const normalized = (typeof text === 'string' ? text : text.toString()).replace(/(\r\n|\n|\r)/gm, '');
+  const regex = /([a-zA-Z\-!@#_]+)\((.*?)\)/g;
+  const children = [];
+  let cursor = 0;
+  let match;
+  let partIndex = 0;
+
+  while ((match = regex.exec(normalized)) !== null) {
+    const [fullMatch, linkText, link] = match;
+    const before = normalized.slice(cursor, match.index);
+
+    if (before) {
+      children.push(before);
+    }
+
+    children.push(
+      <a
+        key={`info-link-${key}-${partIndex++}`}
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="hvr-underline-from-left"
+      >
+        {linkText}
+      </a>
+    );
+
+    cursor = match.index + fullMatch.length;
   }
-  return queueArray.map(elem => elem);
+
+  const trailing = normalized.slice(cursor);
+  if (trailing) {
+    children.push(trailing);
+  }
+
+  return <p key={key}>{children.length > 0 ? children : normalized}</p>;
 };
 
 const workPattern = (props) => {
-  const encodedInfo = props.info.map(i => infoPatternEncode(i));
+  const encodedInfo = props.info.map((item, idx) => infoPatternEncode(item, `encodedInfo-${idx}`));
   return (
     <div className="myBox myBox--light">
       <div className="badge-parent">
@@ -152,9 +153,7 @@ const workPattern = (props) => {
         <h4 className="language">{props.language}</h4>
         <div className="work-description-panel">
           <h5 className="info">{props.subInfo}</h5>
-          {encodedInfo.map((elem, idx) => (
-            <React.Fragment key={`encodedInfo-${idx}`}>{elem}</React.Fragment>
-          ))}
+          {encodedInfo}
         </div>
       </div>
       <a

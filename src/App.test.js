@@ -5,6 +5,11 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Certifications from './pages/Certifications';
 import Privacy from './pages/Privacy';
+// eslint-disable-next-line no-undef
+jest.mock('react-bootstrap', () => ({
+  // eslint-disable-next-line react/prop-types
+  Badge: ({ children, ...props }) => <span {...props}>{children}</span>
+}));
 
 test('work page includes a project for the current year', () => {
   const currentYear = new Date().getFullYear().toString();
