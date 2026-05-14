@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import "../css/home.css"
+import "../css/about.css"
 
 const TechnologyGroup = ({ label, items }) => {
   return (
@@ -56,7 +56,7 @@ export default function About() {
         ))}
       </div>
 
-      <section className="resume-inline-card pixel-borders pixel-box--warning" aria-label="Resume request">
+      <section className="resume-inline-card pixel-borders pixel-box--warning resume-box--warning" aria-label="Resume request">
         <p className="resume-inline-text">Send me an email for my resume by clicking the button.</p>
         <a
           className="resume-inline-link"

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
-import { Jumbotron as Jumbo, Container, Row, Col, Image } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import {
   BrowserRouter as Router,
   Switch,
@@ -61,6 +61,7 @@ const Styles = styled.div`
 `;
 
 class App extends Component {
+  // eslint-disable-next-line no-unused-vars
   generateKey = (pre) => {
     return `${ new Date().getTime() }`;
   }

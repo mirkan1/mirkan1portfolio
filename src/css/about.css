@@ -1,15 +1,11 @@
 .tech-parent-column {  
     display: flex;
     flex-wrap: wrap;
+    gap: 1.25rem;
     align-items: stretch;
     justify-content: center;
     height: 100%;
     width: 100%;
-    gap: 1.25rem;
-    background: linear-gradient(145deg, #111827 0%, #0b1220 100%);
-    border-style: solid;
-    border-width: 5px;
-    border-color: #202020;
     border-image-slice: 2;
     border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23cccccc' /></svg>");
     padding: 1.5rem;
@@ -41,12 +37,12 @@
 .tech-group-card {
     position: relative;
     display: block;
-    flex: 0 0 calc((100% - 1.25rem) / 2);
-    max-width: calc((100% - 1.25rem) / 2);
-    box-sizing: border-box;
     color: #202020;
     padding: 1rem;
     min-height: 100%;
+    flex: 1 1 calc(33.333% - 0.833rem);
+    max-width: calc(33.333% - 0.833rem);
+    box-sizing: border-box;
 }
 
 .tech-group-card::before {
@@ -89,7 +85,7 @@
 }
 
 .tech-group-card.pixel-box--warning {
-    border-color: #a88f06;
+    border-color: #635505;
     border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
     background-color: #f4e49b;
     color: #202020;

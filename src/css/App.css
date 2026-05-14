@@ -266,6 +266,11 @@ html {
 }
 
 .pixel-box--warning:hover, .pixel-box--warning:focus {
+  background-color: #000000;
+  color: #f2ce09;
+}
+
+.resume-box--warning:hover, .resume-box--warning:focus {
   background-color: #f2ce09;
 }
 
