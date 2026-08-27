@@ -24,7 +24,7 @@
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.3.0",
     "reactstrap": "^8.4.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^6.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.6",
