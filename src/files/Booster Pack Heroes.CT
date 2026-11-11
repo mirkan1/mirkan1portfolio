@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable spyngroarrrTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"act1 coins"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AE0DA23528</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"ac2 coins"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AEE17C9528</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"ac3 apples"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C191268</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"ac4 skulls"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C191258</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"act5 frosts"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C191270</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"rainbow currency"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C19126C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"act6 coins"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C191528</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"zenith"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>2AF9C19152C</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

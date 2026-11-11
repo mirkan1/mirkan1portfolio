@@ -5,11 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "node-terminal",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
+            "name": "npm start + Chrome",
+            "command": "npm start",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "BROWSER": "none"
+            },
+            "serverReadyAction": {
+                "action": "debugWithChrome",
+                "pattern": "(https?://localhost:\\d+\\S*)",
+                "webRoot": "${workspaceFolder}",
+                "killOnServerStop": true
+            }
         }
     ]
 }

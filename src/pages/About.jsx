@@ -24,7 +24,7 @@ export default function About() {
   const technologyGroups = [
     {
       label: 'Computer Languages',
-      items: ['Python', 'TypeScript', 'Solidity', 'Go']
+      items: ['Python', 'TypeScript', 'Solidity', 'Go', 'C/C++']
     },
     {
       label: 'Front-End',
@@ -41,6 +41,10 @@ export default function About() {
     {
       label: 'Cloud & DevOps',
       items: ['AWS', 'Heroku', 'Docker', 'Git', 'Azure']
+    },
+    {
+      label: 'Systems & Reverse Engineering',
+      items: ['Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra', 'Cheat Engine']
     }
   ];
 

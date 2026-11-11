@@ -33,6 +33,24 @@ test('work page renders source code links', () => {
   expect(sourceLinks.length).toBeGreaterThan(0);
 });
 
+test('work page offers the Booster Pack Heroes cheat table download', () => {
+  render(<Work />);
+
+  const downloadLink = screen.getByText('Download .CT').closest('a');
+  expect(downloadLink).toHaveAttribute('download', 'Booster Pack Heroes.CT');
+  expect(downloadLink).toHaveAttribute('href', expect.stringContaining('Booster Pack Heroes'));
+  expect(screen.getByText('2027-01-01')).toBeInTheDocument();
+});
+
+test('about page lists systems and reverse engineering tools', () => {
+  render(<About />);
+
+  expect(screen.getByText('Systems & Reverse Engineering')).toBeInTheDocument();
+  ['C/C++', 'Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra', 'Cheat Engine'].forEach((tool) => {
+    expect(screen.getByText(tool)).toBeInTheDocument();
+  });
+});
+
 test('certifications page renders certification title and link', () => {
   render(<Certifications />);
 
